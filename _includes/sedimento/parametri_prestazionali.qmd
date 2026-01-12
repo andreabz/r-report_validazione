@@ -1,0 +1,115 @@
+## Parametri prestazionali e criteri di accettabilità
+
+In questa sezione sono descritti i parametri prestazionali adottati per la
+valutazione del metodo applicato alla matrice **sedimenti**.  
+I metodi di calcolo utilizzati sono definiti in documenti operativi dedicati;
+nel presente rapporto tali metodi vengono applicati ai dati sperimentali
+raccolti e confrontati con i requisiti previsti.
+
+### Limite di quantificazione (LOQ)
+
+Il limite di quantificazione è determinato a partire dal punto più basso della
+retta di taratura strumentale.
+
+#### Requisiti sul limite di quantificazione
+
+Per la matrice sedimenti, il requisito sul LOQ è definito tenendo conto dei limiti
+normativi applicabili ai parametri di interesse. In particolare, il valore
+obiettivo è fissato a **0.7 ng/kg**, in modo da garantire il raggiungimento di 1/3 del valore dello standard di qualità ambientale previsto per il parametro OMS-TEQ PCDD/F + PCBdl (D.Lgs. 152/06).
+
+La conformità del LOQ ottenuto viene verificata confrontando il valore calcolato
+con il requisito stabilito. Il requisito è considerato soddisfatto quando il LOQ determinato sperimentalmente risulta inferiore o uguale al valore obiettivo stabilito.
+
+### Intervallo di lavoro
+
+L'intervallo di lavoro del metodo è definito come l'intervallo compreso tra il
+limite di quantificazione e l'estremo superiore della retta di taratura.
+
+All'interno di tale intervallo il metodo è applicato per la valutazione delle
+prestazioni e per la successiva produzione dei risultati analitici.
+
+### Intervallo di linearità
+
+L'intervallo di linearità coincide con l'intervallo compreso tra l'estremo
+inferiore e l'estremo superiore della retta di taratura.
+
+La linearità del metodo è verificata nell'intero intervallo considerato,
+assumendo che al suo interno la risposta strumentale sia adeguatamente
+descritta dal modello di calibrazione adottato.
+
+### Precisione
+
+La precisione del metodo è valutata in termini di ripetibilità ed è espressa
+mediante la deviazione standard, il limite di ripetibilità e il coefficiente di
+variazione.
+
+#### Deviazione standard di ripetibilità (s)
+
+La deviazione standard di ripetibilità ($s$) è calcolata a partire da sei prove
+indipendenti eseguite allo stesso livello di concentrazione.
+
+Per concentrazioni diverse da quelle studiate in fase di validazione, il valore
+di ripetibilità ($S_r$) è stimato utilizzando il coefficiente di variazione
+determinato al livello più prossimo, assumendo una dipendenza lineare dalla
+concentrazione:
+
+$$
+S_r = \mathrm{CV\%} / 100 \cdot C
+$$
+
+#### Limite di ripetibilità (r)
+
+Il limite di ripetibilità ($r$) è calcolato utilizzando il valore del coefficiente
+di Student a due code corrispondente a un livello di confidenza del 95%.
+
+#### Requisiti sulla precisione
+
+Il requisito sulla precisione è espresso in termini di CV% ed è definito come il
+valore più restrittivo tra:
+
+- il criterio previsto dal metodo normato di riferimento;
+- il criterio derivante dalla linea guida per la stima dell'incertezza di misura,
+  espresso come rapporto tra la ripetibilità e l'incertezza tipo associata al
+  metodo.
+
+La conformità è verificata confrontando il CV% ottenuto con il valore massimo
+ammissibile.
+
+### Esattezza
+
+L'esattezza del metodo è espressa mediante il **recupero percentuale**, calcolato
+come rapporto tra la media dei valori ottenuti da sei prove indipendenti e il
+valore di riferimento.
+
+Il valore di riferimento è determinato a partire dall'aggiunta nota di analita
+effettuata sul campione reale.
+
+#### Requisiti sull'esattezza
+
+Il requisito sull'esattezza è definito come l'intervallo di recupero previsto dal
+metodo normato di riferimento per i singoli analiti.
+
+La conformità è verificata controllando che i valori di recupero rientrino
+nell'intervallo accettabile.
+
+### Incertezza di misura
+
+L'incertezza associata ai valori di concentrazione misurati è stimata applicando
+l'approccio previsto dalla linea guida SNPA per la matrice sedimenti.
+
+Per i singoli congeneri viene considerata un'incertezza tipo pari al 30% del
+valore misurato.  
+L'incertezza associata ai parametri di sommatoria è determinata combinando le
+incertezze dei singoli contributi.
+
+L'incertezza estesa è calcolata utilizzando un fattore di copertura $k = 2$ ed è
+applicata all'intero intervallo di lavoro.
+
+#### Verifiche di coerenza tra precisione e incertezza
+
+La coerenza tra i parametri di precisione e l'incertezza stimata è verificata
+mediante il controllo della relazione tra limite di ripetibilità e incertezza
+estesa ($2\, U > r$).
+
+In aggiunta, valore atteso del circuito interlaboratorio deve essere compreso all'interno dell'intervallo di valori individuato dall'incertezza estesa della misura effettuata dal laboratorio.
+

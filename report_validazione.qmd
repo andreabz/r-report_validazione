@@ -1,0 +1,179 @@
+---
+title: "Metodo {{< meta params.method >}}"
+subtitle: "Revisione {{< meta params.rev >}}"
+description: "{{< meta params.description >}}"
+title-block-banner: "#0f4c81"
+params:
+    method: "Chim_452"
+    rev: "03"
+    description: "Policlorodibenzodiossine e policlorodibenzofurani in sedimenti marini e terreni con gascromatografia e spettrometria di massa in alta risoluzione"
+---
+
+{{< include _includes/sommario.qmd >}}
+
+---
+
+{{< include _includes/news.qmd >}}
+
+{{< include _includes/riferimenti.qmd >}}
+
+```{r}
+#| label: get_results
+library(data.table)
+library(knitr)
+library(here)
+
+source(here("R/controlli.R"))
+source(here("R/prestazioni.R"))
+source(here("R/reporting.R"))
+
+requisiti <- fread(here("data/requisiti.csv"))
+condizioni <- fread(here("data/condizioni.csv"))
+risultati <- fread(here("data/risultati.csv"))
+```
+
+```{r}
+#| label: performances
+# indice per ordinare gli analiti
+ordine_analiti <- risultati[, .(ordine = .GRP), by = analita]
+
+# calcolo i risultati prestazionali per i vari parametri e poi li unisco in un unico dataset
+normalita <- risultati[tolower(parametro) %like% "precisione",
+                        # calcolo le metriche prestazionali
+                        .(
+                         parametro = "Normalita",
+                         normalita = normalita_shapiro(valore_misurato)$result,
+                         outlier_95 = outlier_gesd(valore_misurato, significance = 0.95)$result,
+                         outlier_99 = outlier_gesd(valore_misurato, significance = 0.99)$result,
+                         udm = unique(udm)
+                        ),
+                        # per matrice, analita e livello
+                        by = .(matrice, analita, livello)] |>
+                # passo in formato long
+                melt(id.vars = c("matrice", "analita", "udm", "livello", "parametro")) 
+
+precisione <- risultati[tolower(parametro) %like% "precisione",
+                        # calcolo le metriche prestazionali
+                        .(
+                         parametro = "Precisione",
+                         s = dev_std(valore_misurato, sigfigs = "numeric"),
+                         cv = cv_percento(valore_misurato, sigfigs = "numeric"),
+                         r = limite_ripetibilita(valore_misurato, sigfigs = "numeric"),
+                         udm = unique(udm)
+                        ),
+                        # per matrice, analita e livello
+                        by = .(matrice, analita, livello)] |>
+                # passo in formato long
+                melt(id.vars = c("matrice", "analita", "udm", "livello", "parametro")) 
+                
+esattezza <- risultati[tolower(parametro) %like% "esattezza",
+                        # calcolo le metriche prestazionali
+                        .(
+                         parametro = "Esattezza",
+                         m = media_aritmetica(valore_misurato, sigfigs = "numeric"),
+                         ci = ic_media(valore_misurato, sigfigs = "numeric"),
+                         recupero = 100 * media_aritmetica(valore_misurato, sigfigs = "numeric") / livello,
+                         udm = unique(udm)
+                        ),
+                        # per matrice, analita e livello
+                        by = .(matrice, analita, livello)] |>
+                # passo in formato long
+                melt(id.vars = c("matrice", "analita", "udm", "livello", "parametro")) 
+
+loq <- risultati[tolower(parametro) %like% "loq",
+                        # calcolo le metriche prestazionali
+                        .(
+                         parametro = "LOQ",
+                         loq = unique(valore_misurato),
+                         udm = unique(udm)
+                        ),
+                        # per matrice, analita e livello
+                        by = .(matrice, analita, livello)] |>
+                # passo in formato long
+                melt(id.vars = c("matrice", "analita", "udm", "livello", "parametro")) 
+
+intervalli <- risultati[tolower(parametro) %like% "intervallo",
+                        # calcolo le metriche prestazionali
+                        .(
+                         parametro = "Intervalli",
+                         intervallo_lavoro = intervallo_dt(.SD, type = "lavoro", unit_col = "udm"),
+                         intervallo_linearita = intervallo_dt(.SD, type = "linearità", unit_col = "udm")
+                        ),
+                        # per matrice, analita e livello
+                        by = .(matrice, analita, livello, udm)] |>
+                # passo in formato long
+                melt(id.vars = c("matrice", "analita", "udm", "livello", "parametro")) 
+
+prestazioni <- rbind(normalita, precisione, esattezza, loq, intervalli) |>
+                # unisco alle informazioni sui requisiti
+                merge(requisiti,
+                    by.x = c("matrice", "analita", "variable", "parametro"),
+                    by.y = c("matrice", "analita", "espressione", "parametro"),
+                    all.x = TRUE)
+
+prestazioni <- merge(prestazioni, condizioni,
+                    by = c("matrice", "livello"),
+                    all.x = TRUE)
+
+# sistemo le unità di misura
+prestazioni[, `:=` (
+    udm_livello = udm.x,
+    udm_metrica = ifelse(variable %in% c("cv", "recupero"), "%", udm.x),
+    udm.x = NULL,
+    udm.y = NULL
+    )]
+
+# calcolo l'incertezza (per approcci metrologici o nord-test dovrebbe essere nei dati di input)
+prestazioni[!is.na(livello), incertezza := format_signif(0.6 * livello, 2)]
+
+# valuto l'esito
+prestazioni[, esito := check_requisito_dt(value, requisito_max, requisito_min)]
+
+# ordino gli analiti
+prestazioni <- merge(prestazioni, ordine_analiti, by = "analita")[order(ordine)]
+```
+
+```{r}
+#| label: res_matrice
+#| output: asis
+matrici <- prestazioni[, unique(matrice)]
+
+# sezioni dinamiche divise per matrice con:
+#     - parametri prestazionali (statici)
+#     - piano prove (statici)
+#     - risultati (dinamici per ogni analita e parametro prestazionale)
+for (i_matrice in matrici) {
+  prestazioni_matrice <- prestazioni[matrice == i_matrice]
+  analiti_matrice <- prestazioni_matrice[, unique(analita)]
+
+  # titolo con matrice
+  cat("---")
+  cat("\n\n")
+  paste0("# ", capitalizza(i_matrice)) |> cat()
+
+  # documenti statici specifici per matrice
+  path_parametri_prestazionali <- paste0("_includes/", i_matrice, "/parametri_prestazionali.qmd" )
+  path_piano_prove <- paste0("_includes/", i_matrice, "/piano_prove.qmd" )
+  knitr::knit_child(path_parametri_prestazionali, quiet = TRUE) |> cat()
+  cat("\n")
+  knitr::knit_child(path_piano_prove, quiet = TRUE) |> cat()
+  cat("\n")
+
+  cat("\n\n## Risultati\n\n")
+
+  # documenti dinamici dipendenti dai risultati e specifici per matrice e analita
+  for (i_analita in analiti_matrice) {
+    env_child <- new.env()
+    env_child$matrice <- i_matrice
+    env_child$analita <- i_analita
+    env_child$risultati <- prestazioni_matrice[analita == i_analita]
+    
+    knitr::knit_child("_includes/risultati.qmd",
+      envir = env_child,
+      quiet = TRUE) |>
+    cat()
+    cat("\n\n")
+  }
+
+}
+```

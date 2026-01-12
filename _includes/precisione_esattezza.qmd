@@ -1,0 +1,21 @@
+#### Livello `r risultati[livello == livello, paste0(livello, " ", udm_livello) |> unique()]`
+
+`r risultati[,unique(condizione)]`
+
+**Controlli sui dati**:
+
+  - **Normalità**: `r risultati[variable == "normalita", value]`<br>
+  - **Outlier** ($\alpha = 95\%$): `r risultati[variable == "outlier_95", value]`<br>
+  - **Outlier** ($\alpha = 99\%$): `r risultati[variable == "outlier_99", value]`<br>
+
+**Precisione**:
+
+  - $s$: `r risultati[variable == "s", format_risultato(requisito_min, requisito_max, value, udm_metrica, esito)]`<br>
+  - $r$: `r risultati[variable == "r", format_risultato(requisito_min, requisito_max, value, udm_metrica, esito)]`<br>
+  - **CV%**: `r risultati[variable == "cv", format_risultato(requisito_min, requisito_max, value, udm_metrica, esito)]`<br>
+
+**Esattezza**:
+
+  - **recupero**: `r risultati[variable == "recupero", format_risultato(requisito_min, requisito_max, value, udm_metrica, esito)]`<br>
+
+**Incertezza**: `r risultati[livello == livello, paste0(incertezza, " ", udm_livello) |> unique()]`<br>

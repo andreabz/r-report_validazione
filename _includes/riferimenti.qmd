@@ -1,0 +1,40 @@
+# Riferimenti
+
+I documenti riportati di seguito costituiscono un esempio dei riferimenti
+normativi e tecnici tipicamente utilizzati per la validazione di un metodo
+normato per la determinazione di policlorodibenzodiossine e
+policlorodibenzofurani (PCDD/PCDF) in matrici ambientali solide.
+
+L'elenco ha scopo illustrativo e mostra come i riferimenti possano essere
+organizzati e richiamati all'interno di un rapporto di validazione coerente
+con la ISO/IEC 17025.
+
+## Metodi normati
+
+- EPA 1613B – Tetra- through Octa-Chlorinated Dioxins and Furans by Isotope
+  Dilution HRGC/HRMS.
+
+## Normativa ambientale
+
+- Decreto Legislativo 3 aprile 2006, n. 152 – Norme in materia ambientale.
+- Decreto 1 marzo 2019, n. 46 – Regolamento relativo agli interventi di
+  bonifica e ripristino ambientale delle aree destinate alla produzione
+  agricola.
+
+## Valutazione dell'incertezza e uso dei materiali di riferimento
+
+- EA (European co-operation for Accreditation), EA-4/14 – *The Selection and
+  Use of Reference Materials*, 2003.
+- Sistema Nazionale per la Protezione dell'Ambiente (SNPA), Linea Guida
+  34/2021 – *Criteri condivisi per la stima e l'interpretazione dell'incertezza
+  di misura e l'espressione del risultato*.
+
+## Limiti di rivelabilità e quantificazione
+
+- European Commission, Joint Research Centre, *Guidance document on the
+  estimation of LOD and LOQ for measurements in the field of contaminants*,
+  2016.
+- European Union Reference Laboratory (EURL), *Guidance document on the
+  estimation of LOQ for measurements in the field of contaminants*, 2022.
+
+

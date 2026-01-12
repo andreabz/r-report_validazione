@@ -1,0 +1,67 @@
+## Piano delle prove di validazione
+
+In questa sezione è descritto il piano delle prove sperimentali adottato per la
+valutazione delle prestazioni del metodo applicato alla matrice **terreni**.
+
+Il piano delle prove è stato definito in modo da consentire la verifica dei
+requisiti prestazionali individuati per ciascun parametro, garantendo al tempo
+stesso la rappresentatività delle condizioni operative del metodo.
+
+Le prove sono state eseguite su campioni di matrice reale, opportunamente
+selezionati e caratterizzati, mediante aggiunta nota degli analiti di interesse.
+
+### Matrice e campioni
+
+La matrice considerata è costituita da **terreni**, selezionati in modo da
+rappresentare una variabilità realistica delle caratteristiche fisico-chimiche
+tipiche dei campioni analizzati routinariamente.
+
+I campioni utilizzati per le prove di validazione sono stati preventivamente
+verificati per l'assenza di concentrazioni significative degli analiti oggetto di
+studio, al fine di rendere trascurabile il contributo del contenuto nativo
+rispetto all'aggiunta effettuata.
+
+### Livelli di concentrazione
+
+Le prove sono state pianificate su più livelli di concentrazione, scelti in
+relazione ai requisiti normativi e agli obiettivi del metodo.
+
+In particolare, sono stati considerati:
+
+- un **livello basso**, prossimo al limite di quantificazione, rappresentativo
+  delle condizioni più critiche per la misura;
+- un **livello alto**, corrispondente al 20% del limite normativo più restrittivo.
+
+La selezione dei livelli consente di valutare le prestazioni del metodo
+sull'intero intervallo di applicazione previsto.
+
+### Prove con aggiunta nota
+
+Per ciascun livello di concentrazione sono state eseguite prove con **aggiunta
+nota degli analiti** su campioni di terreno.
+
+Le aggiunte sono state effettuate utilizzando soluzioni di riferimento a
+concentrazione nota, in modo da ottenere nel campione finale i livelli di
+concentrazione pianificati.
+
+Per ogni livello sono state preparate **sei repliche indipendenti**, trattate
+come campioni distinti lungo l'intero procedimento analitico.
+
+Questa impostazione consente la valutazione della precisione in condizioni di
+ripetibilità e la stima dell'esattezza mediante confronto con il valore di
+riferimento.
+
+### Sequenza operativa e controlli
+
+Le prove sono state distribuite su più sessioni analitiche, mantenendo costanti
+le principali condizioni operative del metodo.
+
+All'interno delle sequenze analitiche sono stati inclusi:
+
+- campioni di controllo a concentrazione nota;
+- bianchi di procedura;
+- verifiche della risposta strumentale.
+
+I controlli sono stati utilizzati per monitorare la stabilità del sistema
+analitico e per supportare la valutazione dei contributi all'incertezza di
+misura.

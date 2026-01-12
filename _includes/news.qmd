@@ -1,0 +1,50 @@
+# Modifiche al metodo
+
+Nel tempo il metodo e il relativo rapporto di validazione possono
+richiedere aggiornamenti, integrazioni o chiarimenti, pur restando
+all'interno del campo di applicazione definito dalla norma di
+riferimento.
+
+Di seguito sono riportati alcuni esempi di modifiche tecniche e
+documentali, con l'indicazione della motivazione e dell'azione
+intrapresa.
+
+- **Revisione del livello di esattezza per la matrice suolo - 15/02/2025**  
+  È emersa la necessità di chiarire il livello di concentrazione a cui
+  era stata valutata l'esattezza in fase di validazione per la matrice
+  suolo.
+
+  Il rapporto è stato integrato specificando il livello utilizzato e
+  includendo ulteriori dati disponibili, mantenendo invariato
+  l'approccio di valutazione.
+
+- **Aggiornamento dei criteri di accettabilità dello standard di controllo - 11/06/2024**  
+  È stata migliorata la definizione dei criteri di accettabilità dello
+  standard di controllo, rendendola coerente con l'incertezza stimata del
+  metodo.
+
+  I criteri sono stati aggiornati nel rapporto, applicando l'intervallo
+  più restrittivo previsto dalla documentazione tecnica di riferimento
+  per i singoli congeneri.
+
+- **Estensione del campo di validazione a livelli di concentrazione più bassi - 11/06/2024**  
+  Sono state introdotte prove di validazione a un livello di
+  concentrazione inferiore rispetto a quelli inizialmente considerati,
+  al fine di coprire scenari applicativi più cautelativi per le matrici
+  ambientali solide.
+
+  I nuovi dati sono stati integrati nel rapporto, sostituendo risultati
+  meno rappresentativi.
+
+- **Chiarimento della descrizione delle matrici - 25/08/2023**  
+  La descrizione delle matrici è stata resa più coerente e uniforme,
+  specificando in modo esplicito l'ambito di applicazione per terreni e
+  sedimenti.
+
+- **Aggiornamento dei valori di LOQ - 25/08/2023**  
+  I valori di limite di quantificazione sono stati aggiornati in seguito
+  a una revisione delle prestazioni strumentali e delle condizioni
+  operative.
+
+  Il rapporto è stato aggiornato riportando i nuovi valori e le relative
+  verifiche di conformità.

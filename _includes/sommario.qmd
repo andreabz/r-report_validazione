@@ -1,0 +1,44 @@
+**Matrici**
+: terreni, sedimenti
+
+**Analiti**
+: - Policlorodibenzodiossine (PCDD):
+        - 2,3,7,8-TCDD,
+        - 1,2,3,7,8-PeCDD,
+        - 1,2,3,4,7,8-HxCDD,
+        - 1,2,3,6,7,8-HxCDD,
+        - 1,2,3,7,8,9-HxCDD,
+        - 1,2,3,4,6,7,8-HpCDD,
+        - OCDD;
+ - Policlorodibenzofurani (PCDF):
+        - 2,3,7,8-TCDF,
+        - 1,2,3,7,8-PeCDF,
+        - 2,3,4,7,8-PeCDF,
+        - 1,2,3,4,7,8-HxCDF,
+        - 1,2,3,6,7,8-HxCDF,
+        - 2,3,4,6,7,8-HxCDF,
+        - 1,2,3,7,8,9-HxCDF,
+        - 1,2,3,4,6,7,8-HpCDF,
+        - 1,2,3,4,7,8,9-HpCDF,
+        - OCDF;
+ - Sommatoria di policlorodibenzo-p-diossine/policlorodibenzofurani (PCDD/PCDF) come
+tossicità equivalente I-TEQ da conversione I-TEF (calcolata);
+ - Sommatoria di policlorodibenzodiossine/policlorodibenzofurani (PCDD/PCDF) come
+tossicità equivalente OMS-TEQ (2005) (calcolata).
+
+**Metodi di riferimento**
+: 
+- EPA 1613B 1994
+- NATO CCMS Report n° 176 1988 I-TEF, OMS-TEF 2005
+
+**Tecnica**
+: HRGC/HRMS
+
+**Strumento**
+: MS541
+
+**Tipo di metodo**
+: - [ ] interno
+- [x] normalizzato
+- [ ] non normalizzato
+- [ ] modificato come specificato nel seguito: -

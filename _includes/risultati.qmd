@@ -1,0 +1,32 @@
+### `r analita`
+
+```{r}
+# intervalli
+lavoro_txt <- risultati[variable == "intervallo_lavoro", paste0(value, " ", udm_metrica)] |>
+     paste0(collapse = "; ")
+linearita_txt <- risultati[variable == "intervallo_linearita",
+  ifelse(!is.na(value), 
+    paste0(value, " ", udm_metrica),
+    "non applicabile")] |> 
+      paste0(collapse = "; ")
+```
+
+**LOQ**: `r risultati[variable == "loq", format_risultato(requisito_min, requisito_max, value, udm_metrica, esito)]`<br>
+**Intervallo di lavoro**: `r lavoro_txt`<br> 
+**Intervallo di linearità**: `r linearita_txt`<br>
+
+```{r}
+#| output: asis
+livelli <- risultati[!is.na(livello), unique(livello)]
+
+for (lvl in livelli) {
+  env_child <- new.env()
+  env_child$risultati <- risultati[livello == lvl]
+  env_child$livello <- lvl
+  knitr::knit_child("_includes/precisione_esattezza.qmd",
+        envir = env_child,
+        quiet = TRUE) |>
+    cat()
+  cat("\n\n\n")
+}
+```
