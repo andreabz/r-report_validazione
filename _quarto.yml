@@ -1,0 +1,13 @@
+project:
+  type: default   # o book / website / report
+lang: it
+format:
+    html:
+        css: www/report_validazione.css
+        toc: true
+        toc-depth: 3
+execute: 
+    echo: false
+    warning: false
+    error: false
+    message: false
