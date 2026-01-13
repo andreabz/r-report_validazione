@@ -1,0 +1,2719 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it" xml:lang="it"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Policlorodibenzodiossine e policlorodibenzofurani in sedimenti marini e terreni con gascromatografia e spettrometria di massa in alta risoluzione">
+
+<title>Metodo Chim_452</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="report_validazione_files/libs/clipboard/clipboard.min.js"></script>
+<script src="report_validazione_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="report_validazione_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="report_validazione_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="report_validazione_files/libs/quarto-html/popper.min.js"></script>
+<script src="report_validazione_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="report_validazione_files/libs/quarto-html/anchor.min.js"></script>
+<link href="report_validazione_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="report_validazione_files/libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="report_validazione_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="report_validazione_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="report_validazione_files/libs/bootstrap/bootstrap-55aa396ea3e988129bcec43acf404917.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<style>
+
+      .quarto-title-block .quarto-title-banner {
+        background: #0f4c81;
+      }
+</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="www/report_validazione.css">
+</head>
+
+<body class="quarto-light">
+
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Metodo Chim_452</h1>
+            <p class="subtitle lead">Revisione 03</p>
+                  <div>
+        <div class="description">
+          Policlorodibenzodiossine e policlorodibenzofurani in sedimenti marini e terreni con gascromatografia e spettrometria di massa in alta risoluzione
+        </div>
+      </div>
+                </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Indice</h2>
+   
+  <ul>
+  <li><a href="#modifiche-al-metodo" id="toc-modifiche-al-metodo" class="nav-link active" data-scroll-target="#modifiche-al-metodo">Modifiche al metodo</a></li>
+  <li><a href="#riferimenti" id="toc-riferimenti" class="nav-link" data-scroll-target="#riferimenti">Riferimenti</a>
+  <ul class="collapse">
+  <li><a href="#metodi-normati" id="toc-metodi-normati" class="nav-link" data-scroll-target="#metodi-normati">Metodi normati</a></li>
+  <li><a href="#normativa-ambientale" id="toc-normativa-ambientale" class="nav-link" data-scroll-target="#normativa-ambientale">Normativa ambientale</a></li>
+  <li><a href="#valutazione-dellincertezza-e-uso-dei-materiali-di-riferimento" id="toc-valutazione-dellincertezza-e-uso-dei-materiali-di-riferimento" class="nav-link" data-scroll-target="#valutazione-dellincertezza-e-uso-dei-materiali-di-riferimento">Valutazione dell’incertezza e uso dei materiali di riferimento</a></li>
+  <li><a href="#limiti-di-rivelabilità-e-quantificazione" id="toc-limiti-di-rivelabilità-e-quantificazione" class="nav-link" data-scroll-target="#limiti-di-rivelabilità-e-quantificazione">Limiti di rivelabilità e quantificazione</a></li>
+  </ul></li>
+  <li><a href="#sedimento" id="toc-sedimento" class="nav-link" data-scroll-target="#sedimento">Sedimento</a>
+  <ul class="collapse">
+  <li><a href="#parametri-prestazionali-e-criteri-di-accettabilità" id="toc-parametri-prestazionali-e-criteri-di-accettabilità" class="nav-link" data-scroll-target="#parametri-prestazionali-e-criteri-di-accettabilità">Parametri prestazionali e criteri di accettabilità</a>
+  <ul class="collapse">
+  <li><a href="#limite-di-quantificazione-loq" id="toc-limite-di-quantificazione-loq" class="nav-link" data-scroll-target="#limite-di-quantificazione-loq">Limite di quantificazione (LOQ)</a></li>
+  <li><a href="#intervallo-di-lavoro" id="toc-intervallo-di-lavoro" class="nav-link" data-scroll-target="#intervallo-di-lavoro">Intervallo di lavoro</a></li>
+  <li><a href="#intervallo-di-linearità" id="toc-intervallo-di-linearità" class="nav-link" data-scroll-target="#intervallo-di-linearità">Intervallo di linearità</a></li>
+  <li><a href="#precisione" id="toc-precisione" class="nav-link" data-scroll-target="#precisione">Precisione</a></li>
+  <li><a href="#esattezza" id="toc-esattezza" class="nav-link" data-scroll-target="#esattezza">Esattezza</a></li>
+  <li><a href="#incertezza-di-misura" id="toc-incertezza-di-misura" class="nav-link" data-scroll-target="#incertezza-di-misura">Incertezza di misura</a></li>
+  </ul></li>
+  <li><a href="#piano-delle-prove-di-validazione" id="toc-piano-delle-prove-di-validazione" class="nav-link" data-scroll-target="#piano-delle-prove-di-validazione">Piano delle prove di validazione</a>
+  <ul class="collapse">
+  <li><a href="#matrice-e-campioni" id="toc-matrice-e-campioni" class="nav-link" data-scroll-target="#matrice-e-campioni">Matrice e campioni</a></li>
+  <li><a href="#livelli-di-concentrazione" id="toc-livelli-di-concentrazione" class="nav-link" data-scroll-target="#livelli-di-concentrazione">Livelli di concentrazione</a></li>
+  <li><a href="#prove-con-aggiunta-nota" id="toc-prove-con-aggiunta-nota" class="nav-link" data-scroll-target="#prove-con-aggiunta-nota">Prove con aggiunta nota</a></li>
+  <li><a href="#sequenza-operativa-e-controlli" id="toc-sequenza-operativa-e-controlli" class="nav-link" data-scroll-target="#sequenza-operativa-e-controlli">Sequenza operativa e controlli</a></li>
+  </ul></li>
+  <li><a href="#risultati" id="toc-risultati" class="nav-link" data-scroll-target="#risultati">Risultati</a>
+  <ul class="collapse">
+  <li><a href="#tcdd" id="toc-tcdd" class="nav-link" data-scroll-target="#tcdd">2,3,7,8-TCDD</a></li>
+  <li><a href="#tcdf" id="toc-tcdf" class="nav-link" data-scroll-target="#tcdf">2,3,7,8-TCDF</a></li>
+  <li><a href="#pecdd" id="toc-pecdd" class="nav-link" data-scroll-target="#pecdd">1,2,3,7,8-PeCDD</a></li>
+  <li><a href="#pecdf" id="toc-pecdf" class="nav-link" data-scroll-target="#pecdf">1,2,3,7,8-PeCDF</a></li>
+  <li><a href="#pecdf-1" id="toc-pecdf-1" class="nav-link" data-scroll-target="#pecdf-1">2,3,4,7,8-PeCDF</a></li>
+  <li><a href="#hxcdd" id="toc-hxcdd" class="nav-link" data-scroll-target="#hxcdd">1,2,3,4,7,8-HxCDD</a></li>
+  <li><a href="#hxcdf" id="toc-hxcdf" class="nav-link" data-scroll-target="#hxcdf">1,2,3,4,7,8-HxCDF</a></li>
+  <li><a href="#hxcdd-1" id="toc-hxcdd-1" class="nav-link" data-scroll-target="#hxcdd-1">1,2,3,6,7,8-HxCDD</a></li>
+  <li><a href="#hxcdf-1" id="toc-hxcdf-1" class="nav-link" data-scroll-target="#hxcdf-1">1,2,3,6,7,8-HxCDF</a></li>
+  <li><a href="#hxcdd-2" id="toc-hxcdd-2" class="nav-link" data-scroll-target="#hxcdd-2">1,2,3,7,8,9-HxCDD</a></li>
+  <li><a href="#hxcdf-2" id="toc-hxcdf-2" class="nav-link" data-scroll-target="#hxcdf-2">1,2,3,7,8,9-HxCDF</a></li>
+  <li><a href="#hxcdf-3" id="toc-hxcdf-3" class="nav-link" data-scroll-target="#hxcdf-3">2,3,4,6,7,8-HxCDF</a></li>
+  <li><a href="#hpcdd" id="toc-hpcdd" class="nav-link" data-scroll-target="#hpcdd">1,2,3,4,6,7,8-HpCDD</a></li>
+  <li><a href="#hpcdf" id="toc-hpcdf" class="nav-link" data-scroll-target="#hpcdf">1,2,3,4,6,7,8-HpCDF</a></li>
+  <li><a href="#hpcdf-1" id="toc-hpcdf-1" class="nav-link" data-scroll-target="#hpcdf-1">1,2,3,4,7,8,9-HpCDF</a></li>
+  <li><a href="#ocdd" id="toc-ocdd" class="nav-link" data-scroll-target="#ocdd">OCDD</a></li>
+  <li><a href="#ocdf" id="toc-ocdf" class="nav-link" data-scroll-target="#ocdf">OCDF</a></li>
+  <li><a href="#i-teq-pcddf" id="toc-i-teq-pcddf" class="nav-link" data-scroll-target="#i-teq-pcddf">I-TEQ-PCDD/F</a></li>
+  <li><a href="#oms-teq-pcddf" id="toc-oms-teq-pcddf" class="nav-link" data-scroll-target="#oms-teq-pcddf">OMS-TEQ-PCDD/F</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#terreno" id="toc-terreno" class="nav-link" data-scroll-target="#terreno">Terreno</a>
+  <ul class="collapse">
+  <li><a href="#parametri-prestazionali-e-criteri-di-accettabilità-1" id="toc-parametri-prestazionali-e-criteri-di-accettabilità-1" class="nav-link" data-scroll-target="#parametri-prestazionali-e-criteri-di-accettabilità-1">Parametri prestazionali e criteri di accettabilità</a>
+  <ul class="collapse">
+  <li><a href="#limite-di-quantificazione-loq-1" id="toc-limite-di-quantificazione-loq-1" class="nav-link" data-scroll-target="#limite-di-quantificazione-loq-1">Limite di quantificazione (LOQ)</a></li>
+  <li><a href="#intervallo-di-lavoro-1" id="toc-intervallo-di-lavoro-1" class="nav-link" data-scroll-target="#intervallo-di-lavoro-1">Intervallo di lavoro</a></li>
+  <li><a href="#intervallo-di-linearità-1" id="toc-intervallo-di-linearità-1" class="nav-link" data-scroll-target="#intervallo-di-linearità-1">Intervallo di linearità</a></li>
+  <li><a href="#precisione-1" id="toc-precisione-1" class="nav-link" data-scroll-target="#precisione-1">Precisione</a></li>
+  <li><a href="#esattezza-1" id="toc-esattezza-1" class="nav-link" data-scroll-target="#esattezza-1">Esattezza</a></li>
+  <li><a href="#incertezza-di-misura-1" id="toc-incertezza-di-misura-1" class="nav-link" data-scroll-target="#incertezza-di-misura-1">Incertezza di misura</a></li>
+  </ul></li>
+  <li><a href="#piano-delle-prove-di-validazione-1" id="toc-piano-delle-prove-di-validazione-1" class="nav-link" data-scroll-target="#piano-delle-prove-di-validazione-1">Piano delle prove di validazione</a>
+  <ul class="collapse">
+  <li><a href="#matrice-e-campioni-1" id="toc-matrice-e-campioni-1" class="nav-link" data-scroll-target="#matrice-e-campioni-1">Matrice e campioni</a></li>
+  <li><a href="#livelli-di-concentrazione-1" id="toc-livelli-di-concentrazione-1" class="nav-link" data-scroll-target="#livelli-di-concentrazione-1">Livelli di concentrazione</a></li>
+  <li><a href="#prove-con-aggiunta-nota-1" id="toc-prove-con-aggiunta-nota-1" class="nav-link" data-scroll-target="#prove-con-aggiunta-nota-1">Prove con aggiunta nota</a></li>
+  <li><a href="#sequenza-operativa-e-controlli-1" id="toc-sequenza-operativa-e-controlli-1" class="nav-link" data-scroll-target="#sequenza-operativa-e-controlli-1">Sequenza operativa e controlli</a></li>
+  </ul></li>
+  <li><a href="#risultati-1" id="toc-risultati-1" class="nav-link" data-scroll-target="#risultati-1">Risultati</a>
+  <ul class="collapse">
+  <li><a href="#tcdd-1" id="toc-tcdd-1" class="nav-link" data-scroll-target="#tcdd-1">2,3,7,8-TCDD</a></li>
+  <li><a href="#tcdf-1" id="toc-tcdf-1" class="nav-link" data-scroll-target="#tcdf-1">2,3,7,8-TCDF</a></li>
+  <li><a href="#pecdd-1" id="toc-pecdd-1" class="nav-link" data-scroll-target="#pecdd-1">1,2,3,7,8-PeCDD</a></li>
+  <li><a href="#pecdf-2" id="toc-pecdf-2" class="nav-link" data-scroll-target="#pecdf-2">1,2,3,7,8-PeCDF</a></li>
+  <li><a href="#pecdf-3" id="toc-pecdf-3" class="nav-link" data-scroll-target="#pecdf-3">2,3,4,7,8-PeCDF</a></li>
+  <li><a href="#hxcdd-3" id="toc-hxcdd-3" class="nav-link" data-scroll-target="#hxcdd-3">1,2,3,4,7,8-HxCDD</a></li>
+  <li><a href="#hxcdf-4" id="toc-hxcdf-4" class="nav-link" data-scroll-target="#hxcdf-4">1,2,3,4,7,8-HxCDF</a></li>
+  <li><a href="#hxcdd-4" id="toc-hxcdd-4" class="nav-link" data-scroll-target="#hxcdd-4">1,2,3,6,7,8-HxCDD</a></li>
+  <li><a href="#hxcdf-5" id="toc-hxcdf-5" class="nav-link" data-scroll-target="#hxcdf-5">1,2,3,6,7,8-HxCDF</a></li>
+  <li><a href="#hxcdd-5" id="toc-hxcdd-5" class="nav-link" data-scroll-target="#hxcdd-5">1,2,3,7,8,9-HxCDD</a></li>
+  <li><a href="#hxcdf-6" id="toc-hxcdf-6" class="nav-link" data-scroll-target="#hxcdf-6">1,2,3,7,8,9-HxCDF</a></li>
+  <li><a href="#hxcdf-7" id="toc-hxcdf-7" class="nav-link" data-scroll-target="#hxcdf-7">2,3,4,6,7,8-HxCDF</a></li>
+  <li><a href="#hpcdd-1" id="toc-hpcdd-1" class="nav-link" data-scroll-target="#hpcdd-1">1,2,3,4,6,7,8-HpCDD</a></li>
+  <li><a href="#hpcdf-2" id="toc-hpcdf-2" class="nav-link" data-scroll-target="#hpcdf-2">1,2,3,4,6,7,8-HpCDF</a></li>
+  <li><a href="#hpcdf-3" id="toc-hpcdf-3" class="nav-link" data-scroll-target="#hpcdf-3">1,2,3,4,7,8,9-HpCDF</a></li>
+  <li><a href="#ocdd-1" id="toc-ocdd-1" class="nav-link" data-scroll-target="#ocdd-1">OCDD</a></li>
+  <li><a href="#ocdf-1" id="toc-ocdf-1" class="nav-link" data-scroll-target="#ocdf-1">OCDF</a></li>
+  <li><a href="#i-teq-pcddf-1" id="toc-i-teq-pcddf-1" class="nav-link" data-scroll-target="#i-teq-pcddf-1">I-TEQ-PCDD/F</a></li>
+  <li><a href="#oms-teq-pcddf-1" id="toc-oms-teq-pcddf-1" class="nav-link" data-scroll-target="#oms-teq-pcddf-1">OMS-TEQ-PCDD/F</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<dl>
+<dt><strong>Matrici</strong></dt>
+<dd>
+terreni, sedimenti
+</dd>
+<dt><strong>Analiti</strong></dt>
+<dd>
+<ul>
+<li>Policlorodibenzodiossine (PCDD):
+<ul>
+<li>2,3,7,8-TCDD,</li>
+<li>1,2,3,7,8-PeCDD,</li>
+<li>1,2,3,4,7,8-HxCDD,</li>
+<li>1,2,3,6,7,8-HxCDD,</li>
+<li>1,2,3,7,8,9-HxCDD,</li>
+<li>1,2,3,4,6,7,8-HpCDD,</li>
+<li>OCDD;</li>
+</ul></li>
+<li>Policlorodibenzofurani (PCDF):
+<ul>
+<li>2,3,7,8-TCDF,</li>
+<li>1,2,3,7,8-PeCDF,</li>
+<li>2,3,4,7,8-PeCDF,</li>
+<li>1,2,3,4,7,8-HxCDF,</li>
+<li>1,2,3,6,7,8-HxCDF,</li>
+<li>2,3,4,6,7,8-HxCDF,</li>
+<li>1,2,3,7,8,9-HxCDF,</li>
+<li>1,2,3,4,6,7,8-HpCDF,</li>
+<li>1,2,3,4,7,8,9-HpCDF,</li>
+<li>OCDF;</li>
+</ul></li>
+<li>Sommatoria di policlorodibenzo-p-diossine/policlorodibenzofurani (PCDD/PCDF) come tossicità equivalente I-TEQ da conversione I-TEF (calcolata);</li>
+<li>Sommatoria di policlorodibenzodiossine/policlorodibenzofurani (PCDD/PCDF) come tossicità equivalente OMS-TEQ (2005) (calcolata).</li>
+</ul>
+</dd>
+<dt><strong>Metodi di riferimento</strong></dt>
+<dd>
+<ul>
+<li>EPA 1613B 1994</li>
+<li>NATO CCMS Report n° 176 1988 I-TEF, OMS-TEF 2005</li>
+</ul>
+</dd>
+<dt><strong>Tecnica</strong></dt>
+<dd>
+HRGC/HRMS
+</dd>
+<dt><strong>Strumento</strong></dt>
+<dd>
+MS541
+</dd>
+<dt><strong>Tipo di metodo</strong></dt>
+<dd>
+<ul class="task-list">
+<li><label><input type="checkbox">interno</label></li>
+<li><label><input type="checkbox" checked="">normalizzato</label></li>
+<li><label><input type="checkbox">non normalizzato</label></li>
+<li><label><input type="checkbox">modificato come specificato nel seguito: -</label></li>
+</ul>
+</dd>
+</dl>
+<hr>
+<section id="modifiche-al-metodo" class="level1">
+<h1>Modifiche al metodo</h1>
+<p>Nel tempo il metodo e il relativo rapporto di validazione possono richiedere aggiornamenti, integrazioni o chiarimenti, pur restando all’interno del campo di applicazione definito dalla norma di riferimento.</p>
+<p>Di seguito sono riportati alcuni esempi di modifiche tecniche e documentali, con l’indicazione della motivazione e dell’azione intrapresa.</p>
+<ul>
+<li><p><strong>Revisione del livello di esattezza per la matrice suolo - 15/02/2025</strong><br>
+È emersa la necessità di chiarire il livello di concentrazione a cui era stata valutata l’esattezza in fase di validazione per la matrice suolo.</p>
+<p>Il rapporto è stato integrato specificando il livello utilizzato e includendo ulteriori dati disponibili, mantenendo invariato l’approccio di valutazione.</p></li>
+<li><p><strong>Aggiornamento dei criteri di accettabilità dello standard di controllo - 11/06/2024</strong><br>
+È stata migliorata la definizione dei criteri di accettabilità dello standard di controllo, rendendola coerente con l’incertezza stimata del metodo.</p>
+<p>I criteri sono stati aggiornati nel rapporto, applicando l’intervallo più restrittivo previsto dalla documentazione tecnica di riferimento per i singoli congeneri.</p></li>
+<li><p><strong>Estensione del campo di validazione a livelli di concentrazione più bassi - 11/06/2024</strong><br>
+Sono state introdotte prove di validazione a un livello di concentrazione inferiore rispetto a quelli inizialmente considerati, al fine di coprire scenari applicativi più cautelativi per le matrici ambientali solide.</p>
+<p>I nuovi dati sono stati integrati nel rapporto, sostituendo risultati meno rappresentativi.</p></li>
+<li><p><strong>Chiarimento della descrizione delle matrici - 25/08/2023</strong><br>
+La descrizione delle matrici è stata resa più coerente e uniforme, specificando in modo esplicito l’ambito di applicazione per terreni e sedimenti.</p></li>
+<li><p><strong>Aggiornamento dei valori di LOQ - 25/08/2023</strong><br>
+I valori di limite di quantificazione sono stati aggiornati in seguito a una revisione delle prestazioni strumentali e delle condizioni operative.</p>
+<p>Il rapporto è stato aggiornato riportando i nuovi valori e le relative verifiche di conformità.</p></li>
+</ul>
+</section>
+<section id="riferimenti" class="level1">
+<h1>Riferimenti</h1>
+<p>I documenti riportati di seguito costituiscono un esempio dei riferimenti normativi e tecnici tipicamente utilizzati per la validazione di un metodo normato per la determinazione di policlorodibenzodiossine e policlorodibenzofurani (PCDD/PCDF) in matrici ambientali solide.</p>
+<p>L’elenco ha scopo illustrativo e mostra come i riferimenti possano essere organizzati e richiamati all’interno di un rapporto di validazione coerente con la ISO/IEC 17025.</p>
+<section id="metodi-normati" class="level2">
+<h2 class="anchored" data-anchor-id="metodi-normati">Metodi normati</h2>
+<ul>
+<li>EPA 1613B – Tetra- through Octa-Chlorinated Dioxins and Furans by Isotope Dilution HRGC/HRMS.</li>
+</ul>
+</section>
+<section id="normativa-ambientale" class="level2">
+<h2 class="anchored" data-anchor-id="normativa-ambientale">Normativa ambientale</h2>
+<ul>
+<li>Decreto Legislativo 3 aprile 2006, n.&nbsp;152 – Norme in materia ambientale.</li>
+<li>Decreto 1 marzo 2019, n.&nbsp;46 – Regolamento relativo agli interventi di bonifica e ripristino ambientale delle aree destinate alla produzione agricola.</li>
+</ul>
+</section>
+<section id="valutazione-dellincertezza-e-uso-dei-materiali-di-riferimento" class="level2">
+<h2 class="anchored" data-anchor-id="valutazione-dellincertezza-e-uso-dei-materiali-di-riferimento">Valutazione dell’incertezza e uso dei materiali di riferimento</h2>
+<ul>
+<li>EA (European co-operation for Accreditation), EA-4/14 – <em>The Selection and Use of Reference Materials</em>, 2003.</li>
+<li>Sistema Nazionale per la Protezione dell’Ambiente (SNPA), Linea Guida 34/2021 – <em>Criteri condivisi per la stima e l’interpretazione dell’incertezza di misura e l’espressione del risultato</em>.</li>
+</ul>
+</section>
+<section id="limiti-di-rivelabilità-e-quantificazione" class="level2">
+<h2 class="anchored" data-anchor-id="limiti-di-rivelabilità-e-quantificazione">Limiti di rivelabilità e quantificazione</h2>
+<ul>
+<li>European Commission, Joint Research Centre, <em>Guidance document on the estimation of LOD and LOQ for measurements in the field of contaminants</em>,
+<ol start="2016" type="1">
+<li></li>
+</ol></li>
+<li>European Union Reference Laboratory (EURL), <em>Guidance document on the estimation of LOQ for measurements in the field of contaminants</em>, 2022.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="sedimento" class="level1">
+<h1>Sedimento</h1>
+<section id="parametri-prestazionali-e-criteri-di-accettabilità" class="level2">
+<h2 class="anchored" data-anchor-id="parametri-prestazionali-e-criteri-di-accettabilità">Parametri prestazionali e criteri di accettabilità</h2>
+<p>In questa sezione sono descritti i parametri prestazionali adottati per la valutazione del metodo applicato alla matrice <strong>sedimenti</strong>.<br>
+I metodi di calcolo utilizzati sono definiti in documenti operativi dedicati; nel presente rapporto tali metodi vengono applicati ai dati sperimentali raccolti e confrontati con i requisiti previsti.</p>
+<section id="limite-di-quantificazione-loq" class="level3">
+<h3 class="anchored" data-anchor-id="limite-di-quantificazione-loq">Limite di quantificazione (LOQ)</h3>
+<p>Il limite di quantificazione è determinato a partire dal punto più basso della retta di taratura strumentale.</p>
+<section id="requisiti-sul-limite-di-quantificazione" class="level4">
+<h4 class="anchored" data-anchor-id="requisiti-sul-limite-di-quantificazione">Requisiti sul limite di quantificazione</h4>
+<p>Per la matrice sedimenti, il requisito sul LOQ è definito tenendo conto dei limiti normativi applicabili ai parametri di interesse. In particolare, il valore obiettivo è fissato a <strong>0.7 ng/kg</strong>, in modo da garantire il raggiungimento di 1/3 del valore dello standard di qualità ambientale previsto per il parametro OMS-TEQ PCDD/F + PCBdl (D.Lgs. 152/06).</p>
+<p>La conformità del LOQ ottenuto viene verificata confrontando il valore calcolato con il requisito stabilito. Il requisito è considerato soddisfatto quando il LOQ determinato sperimentalmente risulta inferiore o uguale al valore obiettivo stabilito.</p>
+</section>
+</section>
+<section id="intervallo-di-lavoro" class="level3">
+<h3 class="anchored" data-anchor-id="intervallo-di-lavoro">Intervallo di lavoro</h3>
+<p>L’intervallo di lavoro del metodo è definito come l’intervallo compreso tra il limite di quantificazione e l’estremo superiore della retta di taratura.</p>
+<p>All’interno di tale intervallo il metodo è applicato per la valutazione delle prestazioni e per la successiva produzione dei risultati analitici.</p>
+</section>
+<section id="intervallo-di-linearità" class="level3">
+<h3 class="anchored" data-anchor-id="intervallo-di-linearità">Intervallo di linearità</h3>
+<p>L’intervallo di linearità coincide con l’intervallo compreso tra l’estremo inferiore e l’estremo superiore della retta di taratura.</p>
+<p>La linearità del metodo è verificata nell’intero intervallo considerato, assumendo che al suo interno la risposta strumentale sia adeguatamente descritta dal modello di calibrazione adottato.</p>
+</section>
+<section id="precisione" class="level3">
+<h3 class="anchored" data-anchor-id="precisione">Precisione</h3>
+<p>La precisione del metodo è valutata in termini di ripetibilità ed è espressa mediante la deviazione standard, il limite di ripetibilità e il coefficiente di variazione.</p>
+<section id="deviazione-standard-di-ripetibilità-s" class="level4">
+<h4 class="anchored" data-anchor-id="deviazione-standard-di-ripetibilità-s">Deviazione standard di ripetibilità (s)</h4>
+<p>La deviazione standard di ripetibilità (<span class="math inline">\(s\)</span>) è calcolata a partire da sei prove indipendenti eseguite allo stesso livello di concentrazione.</p>
+<p>Per concentrazioni diverse da quelle studiate in fase di validazione, il valore di ripetibilità (<span class="math inline">\(S_r\)</span>) è stimato utilizzando il coefficiente di variazione determinato al livello più prossimo, assumendo una dipendenza lineare dalla concentrazione:</p>
+<p><span class="math display">\[
+S_r = \mathrm{CV\%} / 100 \cdot C
+\]</span></p>
+</section>
+<section id="limite-di-ripetibilità-r" class="level4">
+<h4 class="anchored" data-anchor-id="limite-di-ripetibilità-r">Limite di ripetibilità (r)</h4>
+<p>Il limite di ripetibilità (<span class="math inline">\(r\)</span>) è calcolato utilizzando il valore del coefficiente di Student a due code corrispondente a un livello di confidenza del 95%.</p>
+</section>
+<section id="requisiti-sulla-precisione" class="level4">
+<h4 class="anchored" data-anchor-id="requisiti-sulla-precisione">Requisiti sulla precisione</h4>
+<p>Il requisito sulla precisione è espresso in termini di CV% ed è definito come il valore più restrittivo tra:</p>
+<ul>
+<li>il criterio previsto dal metodo normato di riferimento;</li>
+<li>il criterio derivante dalla linea guida per la stima dell’incertezza di misura, espresso come rapporto tra la ripetibilità e l’incertezza tipo associata al metodo.</li>
+</ul>
+<p>La conformità è verificata confrontando il CV% ottenuto con il valore massimo ammissibile.</p>
+</section>
+</section>
+<section id="esattezza" class="level3">
+<h3 class="anchored" data-anchor-id="esattezza">Esattezza</h3>
+<p>L’esattezza del metodo è espressa mediante il <strong>recupero percentuale</strong>, calcolato come rapporto tra la media dei valori ottenuti da sei prove indipendenti e il valore di riferimento.</p>
+<p>Il valore di riferimento è determinato a partire dall’aggiunta nota di analita effettuata sul campione reale.</p>
+<section id="requisiti-sullesattezza" class="level4">
+<h4 class="anchored" data-anchor-id="requisiti-sullesattezza">Requisiti sull’esattezza</h4>
+<p>Il requisito sull’esattezza è definito come l’intervallo di recupero previsto dal metodo normato di riferimento per i singoli analiti.</p>
+<p>La conformità è verificata controllando che i valori di recupero rientrino nell’intervallo accettabile.</p>
+</section>
+</section>
+<section id="incertezza-di-misura" class="level3">
+<h3 class="anchored" data-anchor-id="incertezza-di-misura">Incertezza di misura</h3>
+<p>L’incertezza associata ai valori di concentrazione misurati è stimata applicando l’approccio previsto dalla linea guida SNPA per la matrice sedimenti.</p>
+<p>Per i singoli congeneri viene considerata un’incertezza tipo pari al 30% del valore misurato.<br>
+L’incertezza associata ai parametri di sommatoria è determinata combinando le incertezze dei singoli contributi.</p>
+<p>L’incertezza estesa è calcolata utilizzando un fattore di copertura <span class="math inline">\(k = 2\)</span> ed è applicata all’intero intervallo di lavoro.</p>
+<section id="verifiche-di-coerenza-tra-precisione-e-incertezza" class="level4">
+<h4 class="anchored" data-anchor-id="verifiche-di-coerenza-tra-precisione-e-incertezza">Verifiche di coerenza tra precisione e incertezza</h4>
+<p>La coerenza tra i parametri di precisione e l’incertezza stimata è verificata mediante il controllo della relazione tra limite di ripetibilità e incertezza estesa (<span class="math inline">\(2\, U &gt; r\)</span>).</p>
+<p>In aggiunta, valore atteso del circuito interlaboratorio deve essere compreso all’interno dell’intervallo di valori individuato dall’incertezza estesa della misura effettuata dal laboratorio.</p>
+</section>
+</section>
+</section>
+<section id="piano-delle-prove-di-validazione" class="level2">
+<h2 class="anchored" data-anchor-id="piano-delle-prove-di-validazione">Piano delle prove di validazione</h2>
+<p>In questa sezione è descritto il piano delle prove sperimentali adottato per la valutazione delle prestazioni del metodo applicato alla matrice <strong>sedimenti</strong>.</p>
+<p>Il piano delle prove è stato definito in modo da consentire la verifica dei requisiti prestazionali individuati per ciascun parametro, garantendo al tempo stesso la rappresentatività delle condizioni operative del metodo.</p>
+<p>Le prove sono state eseguite su campioni di matrice reale, opportunamente selezionati e caratterizzati, mediante aggiunta nota degli analiti di interesse.</p>
+<section id="matrice-e-campioni" class="level3">
+<h3 class="anchored" data-anchor-id="matrice-e-campioni">Matrice e campioni</h3>
+<p>La matrice considerata è costituita da <strong>sedimenti</strong>, selezionati in modo da rappresentare una variabilità realistica delle caratteristiche fisico-chimiche tipiche dei campioni analizzati routinariamente.</p>
+<p>I campioni utilizzati per le prove di validazione sono stati preventivamente verificati per l’assenza di concentrazioni significative degli analiti oggetto di studio, al fine di rendere trascurabile il contributo del contenuto nativo rispetto all’aggiunta effettuata.</p>
+</section>
+<section id="livelli-di-concentrazione" class="level3">
+<h3 class="anchored" data-anchor-id="livelli-di-concentrazione">Livelli di concentrazione</h3>
+<p>Le prove sono state pianificate su più livelli di concentrazione, scelti in relazione ai requisiti normativi e agli obiettivi del metodo.</p>
+<p>In particolare, sono stati considerati:</p>
+<ul>
+<li>un <strong>livello basso</strong>, prossimo al limite di quantificazione, rappresentativo delle condizioni più critiche per la misura;</li>
+<li>un <strong>livello alto</strong>, corrispondente allo standard di qualità ambientale indicato dalla normativa.</li>
+</ul>
+<p>La selezione dei livelli consente di valutare le prestazioni del metodo sull’intero intervallo di applicazione previsto.</p>
+</section>
+<section id="prove-con-aggiunta-nota" class="level3">
+<h3 class="anchored" data-anchor-id="prove-con-aggiunta-nota">Prove con aggiunta nota</h3>
+<p>Per ciascun livello di concentrazione sono state eseguite prove con <strong>aggiunta nota degli analiti</strong> su campioni di sedimento marino.</p>
+<p>Le aggiunte sono state effettuate utilizzando soluzioni di riferimento a concentrazione nota, in modo da ottenere nel campione finale i livelli di concentrazione pianificati.</p>
+<p>Per ogni livello sono state preparate <strong>sei repliche indipendenti</strong>, trattate come campioni distinti lungo l’intero procedimento analitico.</p>
+<p>Questa impostazione consente la valutazione della precisione in condizioni di ripetibilità e la stima dell’esattezza mediante confronto con il valore di riferimento.</p>
+</section>
+<section id="sequenza-operativa-e-controlli" class="level3">
+<h3 class="anchored" data-anchor-id="sequenza-operativa-e-controlli">Sequenza operativa e controlli</h3>
+<p>Le prove sono state distribuite su più sessioni analitiche, mantenendo costanti le principali condizioni operative del metodo.</p>
+<p>All’interno delle sequenze analitiche sono stati inclusi:</p>
+<ul>
+<li>campioni di controllo a concentrazione nota;</li>
+<li>bianchi di procedura;</li>
+<li>verifiche della risposta strumentale.</li>
+</ul>
+<p>I controlli sono stati utilizzati per monitorare la stabilità del sistema analitico e per supportare la valutazione dei contributi all’incertezza di misura.</p>
+</section>
+</section>
+<section id="risultati" class="level2">
+<h2 class="anchored" data-anchor-id="risultati">Risultati</h2>
+<section id="tcdd" class="level3">
+<h3 class="anchored" data-anchor-id="tcdd">2,3,7,8-TCDD</h3>
+<p><strong>LOQ</strong>: risultato: 0.050 pg/g<br> <strong>Intervallo di lavoro</strong>: 0.03–40 ng/ml; 0.05–80 ng/kg<br> <strong>Intervallo di linearità</strong>: 0.03–40 ng/ml; 0.05–80 ng/kg<br></p>
+<section id="livello-0.05-ngkg" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.05-ngkg">Livello 0.05 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sabbia purificata e aggiunta con lo standard dei nativi corrispondenti al primo punto di taratura. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.0020 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.0071 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤20%; risultato: 3.8%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 83 - 129%; risultato: 100%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.030 ng/kg<br></p>
+</section>
+<section id="livello-0.2-ngkg" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.2-ngkg">Livello 0.2 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sedimento marino previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.0060 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.022 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤20%; risultato: 3.1%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 83 - 129%; risultato: 96%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.12 ng/kg<br></p>
+</section>
+</section>
+<section id="tcdf" class="level3">
+<h3 class="anchored" data-anchor-id="tcdf">2,3,7,8-TCDF</h3>
+<p><strong>LOQ</strong>: risultato: 0.040 ng/kg<br> <strong>Intervallo di lavoro</strong>: 0.03–40 ng/ml; 0.05–80 ng/kg<br> <strong>Intervallo di linearità</strong>: 0.03–40 ng/ml; 0.05–80 ng/kg<br></p>
+<section id="livello-0.05-ngkg-1" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.05-ngkg-1">Livello 0.05 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sabbia purificata e aggiunta con lo standard dei nativi corrispondenti al primo punto di taratura. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.0016 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.0057 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤20%; risultato: 3.2%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 87 - 137%; risultato: 98%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.030 ng/kg<br></p>
+</section>
+<section id="livello-0.2-ngkg-1" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.2-ngkg-1">Livello 0.2 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sedimento marino previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.017 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.063 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤20%; risultato: 9.3%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 87 - 137%; risultato: 93%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.12 ng/kg<br></p>
+</section>
+</section>
+<section id="pecdd" class="level3">
+<h3 class="anchored" data-anchor-id="pecdd">1,2,3,7,8-PeCDD</h3>
+<p><strong>LOQ</strong>: risultato: 0.20 ng/kg<br> <strong>Intervallo di lavoro</strong>: 0.2–150 ng/ml; 0.4–300 ng/kg<br> <strong>Intervallo di linearità</strong>: 0.2–150 ng/ml; 0.4–300 ng/kg<br></p>
+<section id="livello-0.4-ngkg" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.4-ngkg">Livello 0.4 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sabbia purificata e aggiunta con lo standard dei nativi corrispondenti al primo punto di taratura. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.018 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.065 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤15%; risultato: 4.5%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 76 - 132%; risultato: 100%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.24 ng/kg<br></p>
+</section>
+<section id="livello-1-ngkg" class="level4">
+<h4 class="anchored" data-anchor-id="livello-1-ngkg">Livello 1 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sedimento marino previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.041 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.15 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤15%; risultato: 4.1%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 76 - 132%; risultato: 100%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.60 ng/kg<br></p>
+</section>
+</section>
+<section id="pecdf" class="level3">
+<h3 class="anchored" data-anchor-id="pecdf">1,2,3,7,8-PeCDF</h3>
+<p><strong>LOQ</strong>: risultato: 0.20 ng/kg<br> <strong>Intervallo di lavoro</strong>: 0.2–150 ng/ml; 0.4–300 ng/kg<br> <strong>Intervallo di linearità</strong>: 0.2–150 ng/ml; 0.4–300 ng/kg<br></p>
+<section id="livello-0.4-ngkg-1" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.4-ngkg-1">Livello 0.4 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sabbia purificata e aggiunta con lo standard dei nativi corrispondenti al primo punto di taratura. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.018 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.065 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤15%; risultato: 4.5%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 86 - 124%; risultato: 100%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.24 ng/kg<br></p>
+</section>
+<section id="livello-1-ngkg-1" class="level4">
+<h4 class="anchored" data-anchor-id="livello-1-ngkg-1">Livello 1 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sedimento marino previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.041 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.15 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤15%; risultato: 4.1%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 86 - 124%; risultato: 100%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.60 ng/kg<br></p>
+</section>
+</section>
+<section id="pecdf-1" class="level3">
+<h3 class="anchored" data-anchor-id="pecdf-1">2,3,4,7,8-PeCDF</h3>
+<p><strong>LOQ</strong>: risultato: 0.20 ng/kg<br> <strong>Intervallo di lavoro</strong>: 0.2–150 ng/ml; 0.4–300 ng/kg<br> <strong>Intervallo di linearità</strong>: 0.2–150 ng/ml; 0.4–300 ng/kg<br></p>
+<section id="livello-0.4-ngkg-2" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.4-ngkg-2">Livello 0.4 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sabbia purificata e aggiunta con lo standard dei nativi corrispondenti al primo punto di taratura. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.011 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.040 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤17%; risultato: 2.8%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 72 - 150%; risultato: 100%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.24 ng/kg<br></p>
+</section>
+<section id="livello-1-ngkg-2" class="level4">
+<h4 class="anchored" data-anchor-id="livello-1-ngkg-2">Livello 1 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sedimento marino previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.080 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.29 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤17%; risultato: 8.1%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 72 - 150%; risultato: 99%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.60 ng/kg<br></p>
+</section>
+</section>
+<section id="hxcdd" class="level3">
+<h3 class="anchored" data-anchor-id="hxcdd">1,2,3,4,7,8-HxCDD</h3>
+<p><strong>LOQ</strong>: risultato: 0.20 ng/kg<br> <strong>Intervallo di lavoro</strong>: 0.2–150 ng/ml; 0.4–300 ng/kg<br> <strong>Intervallo di linearità</strong>: 0.2–150 ng/ml; 0.4–300 ng/kg<br></p>
+<section id="livello-0.4-ngkg-3" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.4-ngkg-3">Livello 0.4 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sabbia purificata e aggiunta con lo standard dei nativi corrispondenti al primo punto di taratura. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.010 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.038 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤19%; risultato: 2.4%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 78 - 152%; risultato: 110%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.24 ng/kg<br></p>
+</section>
+<section id="livello-1-ngkg-3" class="level4">
+<h4 class="anchored" data-anchor-id="livello-1-ngkg-3">Livello 1 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sedimento marino previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.080 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.29 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤19%; risultato: 8.0%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 78 - 152%; risultato: 100%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.60 ng/kg<br></p>
+</section>
+</section>
+<section id="hxcdf" class="level3">
+<h3 class="anchored" data-anchor-id="hxcdf">1,2,3,4,7,8-HxCDF</h3>
+<p><strong>LOQ</strong>: risultato: 0.20 ng/kg<br> <strong>Intervallo di lavoro</strong>: 0.2–150 ng/ml; 0.4–300 ng/kg<br> <strong>Intervallo di linearità</strong>: 0.2–150 ng/ml; 0.4–300 ng/kg<br></p>
+<section id="livello-0.4-ngkg-4" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.4-ngkg-4">Livello 0.4 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sabbia purificata e aggiunta con lo standard dei nativi corrispondenti al primo punto di taratura. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.0061 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.022 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤17%; risultato: 1.6%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 82 - 118%; risultato: 96%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.24 ng/kg<br></p>
+</section>
+<section id="livello-1-ngkg-4" class="level4">
+<h4 class="anchored" data-anchor-id="livello-1-ngkg-4">Livello 1 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sedimento marino previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.054 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.20 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤17%; risultato: 6.3%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 82 - 118%; risultato: 85%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.60 ng/kg<br></p>
+</section>
+</section>
+<section id="hxcdd-1" class="level3">
+<h3 class="anchored" data-anchor-id="hxcdd-1">1,2,3,6,7,8-HxCDD</h3>
+<p><strong>LOQ</strong>: risultato: 0.20 ng/kg<br> <strong>Intervallo di lavoro</strong>: 0.2–150 ng/ml; 0.4–300 ng/kg<br> <strong>Intervallo di linearità</strong>: 0.2–150 ng/ml; 0.4–300 ng/kg<br></p>
+<section id="livello-0.4-ngkg-5" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.4-ngkg-5">Livello 0.4 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sabbia purificata e aggiunta con lo standard dei nativi corrispondenti al primo punto di taratura. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.010 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.038 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤15%; risultato: 2.6%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 84 - 124%; risultato: 98%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.24 ng/kg<br></p>
+</section>
+<section id="livello-1-ngkg-5" class="level4">
+<h4 class="anchored" data-anchor-id="livello-1-ngkg-5">Livello 1 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sedimento marino previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.050 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.18 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤15%; risultato: 5.4%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 84 - 124%; risultato: 92%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.60 ng/kg<br></p>
+</section>
+</section>
+<section id="hxcdf-1" class="level3">
+<h3 class="anchored" data-anchor-id="hxcdf-1">1,2,3,6,7,8-HxCDF</h3>
+<p><strong>LOQ</strong>: risultato: 0.20 ng/kg<br> <strong>Intervallo di lavoro</strong>: 0.2–150 ng/ml; 0.4–300 ng/kg<br> <strong>Intervallo di linearità</strong>: 0.2–150 ng/ml; 0.4–300 ng/kg<br></p>
+<section id="livello-0.4-ngkg-6" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.4-ngkg-6">Livello 0.4 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sabbia purificata e aggiunta con lo standard dei nativi corrispondenti al primo punto di taratura. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.010 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.038 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤13%; risultato: 2.6%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 92 - 120%; risultato: 100%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.24 ng/kg<br></p>
+</section>
+<section id="livello-1-ngkg-6" class="level4">
+<h4 class="anchored" data-anchor-id="livello-1-ngkg-6">Livello 1 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sedimento marino previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.067 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.24 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤13%; risultato: 7.1%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 92 - 120%; risultato: 94%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.60 ng/kg<br></p>
+</section>
+</section>
+<section id="hxcdd-2" class="level3">
+<h3 class="anchored" data-anchor-id="hxcdd-2">1,2,3,7,8,9-HxCDD</h3>
+<p><strong>LOQ</strong>: risultato: 0.20 ng/kg<br> <strong>Intervallo di lavoro</strong>: 0.2–150 ng/ml; 0.4–300 ng/kg<br> <strong>Intervallo di linearità</strong>: 0.2–150 ng/ml; 0.4–300 ng/kg<br></p>
+<section id="livello-0.4-ngkg-7" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.4-ngkg-7">Livello 0.4 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sabbia purificata e aggiunta con lo standard dei nativi corrispondenti al primo punto di taratura. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.015 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.053 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤20%; risultato: 3.7%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 74 - 142%; risultato: 98%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.24 ng/kg<br></p>
+</section>
+<section id="livello-1-ngkg-7" class="level4">
+<h4 class="anchored" data-anchor-id="livello-1-ngkg-7">Livello 1 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sedimento marino previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.099 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.36 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤20%; risultato: 11%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 74 - 142%; risultato: 93%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.60 ng/kg<br></p>
+</section>
+</section>
+<section id="hxcdf-2" class="level3">
+<h3 class="anchored" data-anchor-id="hxcdf-2">1,2,3,7,8,9-HxCDF</h3>
+<p><strong>LOQ</strong>: risultato: 0.20 ng/kg<br> <strong>Intervallo di lavoro</strong>: 0.2–150 ng/ml; 0.4–300 ng/kg<br> <strong>Intervallo di linearità</strong>: 0.2–150 ng/ml; 0.4–300 ng/kg<br></p>
+<section id="livello-0.4-ngkg-8" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.4-ngkg-8">Livello 0.4 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sabbia purificata e aggiunta con lo standard dei nativi corrispondenti al primo punto di taratura. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.0099 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.036 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤13%; risultato: 2.4%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 84 - 122%; risultato: 100%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.24 ng/kg<br></p>
+</section>
+<section id="livello-1-ngkg-8" class="level4">
+<h4 class="anchored" data-anchor-id="livello-1-ngkg-8">Livello 1 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sedimento marino previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.070 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.26 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤13%; risultato: 7.3%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 84 - 122%; risultato: 96%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.60 ng/kg<br></p>
+</section>
+</section>
+<section id="hxcdf-3" class="level3">
+<h3 class="anchored" data-anchor-id="hxcdf-3">2,3,4,6,7,8-HxCDF</h3>
+<p><strong>LOQ</strong>: risultato: 0.20 ng/kg<br> <strong>Intervallo di lavoro</strong>: 0.2–150 ng/ml; 0.4–300 ng/kg<br> <strong>Intervallo di linearità</strong>: 0.2–150 ng/ml; 0.4–300 ng/kg<br></p>
+<section id="livello-0.4-ngkg-9" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.4-ngkg-9">Livello 0.4 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sabbia purificata e aggiunta con lo standard dei nativi corrispondenti al primo punto di taratura. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.0093 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.034 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤15%; risultato: 2.3%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 74 - 148%; risultato: 100%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.24 ng/kg<br></p>
+</section>
+<section id="livello-1-ngkg-9" class="level4">
+<h4 class="anchored" data-anchor-id="livello-1-ngkg-9">Livello 1 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sedimento marino previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.092 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.34 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤15%; risultato: 9.6%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 74 - 148%; risultato: 96%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.60 ng/kg<br></p>
+</section>
+</section>
+<section id="hpcdd" class="level3">
+<h3 class="anchored" data-anchor-id="hpcdd">1,2,3,4,6,7,8-HpCDD</h3>
+<p><strong>LOQ</strong>: risultato: 0.20 ng/kg<br> <strong>Intervallo di lavoro</strong>: 0.2–150 ng/ml; 0.4–300 ng/kg<br> <strong>Intervallo di linearità</strong>: 0.2–150 ng/ml; 0.4–300 ng/kg<br></p>
+<section id="livello-0.4-ngkg-10" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.4-ngkg-10">Livello 0.4 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sabbia purificata e aggiunta con lo standard dei nativi corrispondenti al primo punto di taratura. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.014 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.050 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤15%; risultato: 3.5%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 76 - 130%; risultato: 100%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.24 ng/kg<br></p>
+</section>
+<section id="livello-1-ngkg-10" class="level4">
+<h4 class="anchored" data-anchor-id="livello-1-ngkg-10">Livello 1 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sedimento marino previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.10 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.38 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤15%; risultato: 11%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 76 - 130%; risultato: 92%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.60 ng/kg<br></p>
+</section>
+</section>
+<section id="hpcdf" class="level3">
+<h3 class="anchored" data-anchor-id="hpcdf">1,2,3,4,6,7,8-HpCDF</h3>
+<p><strong>LOQ</strong>: risultato: 0.20 ng/kg<br> <strong>Intervallo di lavoro</strong>: 0.2–150 ng/ml; 0.4–300 ng/kg<br> <strong>Intervallo di linearità</strong>: 0.2–150 ng/ml; 0.4–300 ng/kg<br></p>
+<section id="livello-0.4-ngkg-11" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.4-ngkg-11">Livello 0.4 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sabbia purificata e aggiunta con lo standard dei nativi corrispondenti al primo punto di taratura. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.010 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.038 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤13%; risultato: 2.6%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 90 - 112%; risultato: 100%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.24 ng/kg<br></p>
+</section>
+<section id="livello-1-ngkg-11" class="level4">
+<h4 class="anchored" data-anchor-id="livello-1-ngkg-11">Livello 1 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sedimento marino previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.075 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.27 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤13%; risultato: 8.0%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 90 - 112%; risultato: 94%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.60 ng/kg<br></p>
+</section>
+</section>
+<section id="hpcdf-1" class="level3">
+<h3 class="anchored" data-anchor-id="hpcdf-1">1,2,3,4,7,8,9-HpCDF</h3>
+<p><strong>LOQ</strong>: risultato: 0.20 ng/kg<br> <strong>Intervallo di lavoro</strong>: 0.2–150 ng/ml; 0.4–300 ng/kg<br> <strong>Intervallo di linearità</strong>: 0.2–150 ng/ml; 0.4–300 ng/kg<br></p>
+<section id="livello-0.4-ngkg-12" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.4-ngkg-12">Livello 0.4 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sabbia purificata e aggiunta con lo standard dei nativi corrispondenti al primo punto di taratura. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.015 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.053 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤16%; risultato: 3.7%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 86 - 126%; risultato: 98%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.24 ng/kg<br></p>
+</section>
+<section id="livello-1-ngkg-12" class="level4">
+<h4 class="anchored" data-anchor-id="livello-1-ngkg-12">Livello 1 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sedimento marino previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.059 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.21 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤16%; risultato: 6.2%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 86 - 126%; risultato: 94%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.60 ng/kg<br></p>
+</section>
+</section>
+<section id="ocdd" class="level3">
+<h3 class="anchored" data-anchor-id="ocdd">OCDD</h3>
+<p><strong>LOQ</strong>: risultato: 0.40 ng/kg<br> <strong>Intervallo di lavoro</strong>: 0.2–150 ng/ml; 0.4–300 ng/kg<br> <strong>Intervallo di linearità</strong>: 0.2–150 ng/ml; 0.4–300 ng/kg<br></p>
+<section id="livello-0.4-ngkg-13" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.4-ngkg-13">Livello 0.4 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sabbia purificata e aggiunta con lo standard dei nativi corrispondenti al primo punto di taratura. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.038 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.14 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤19%; risultato: 9.2%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 89 - 127%; risultato: 100%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.24 ng/kg<br></p>
+</section>
+<section id="livello-2-ngkg" class="level4">
+<h4 class="anchored" data-anchor-id="livello-2-ngkg">Livello 2 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sedimento marino previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.23 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.82 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤19%; risultato: 12%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 89 - 127%; risultato: 95%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 1.2 ng/kg<br></p>
+</section>
+</section>
+<section id="ocdf" class="level3">
+<h3 class="anchored" data-anchor-id="ocdf">OCDF</h3>
+<p><strong>LOQ</strong>: risultato: 0.40 ng/kg<br> <strong>Intervallo di lavoro</strong>: 0.2–150 ng/ml; 0.4–300 ng/kg<br> <strong>Intervallo di linearità</strong>: 0.2–150 ng/ml; 0.4–300 ng/kg<br></p>
+<section id="livello-0.4-ngkg-14" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.4-ngkg-14">Livello 0.4 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sabbia purificata e aggiunta con lo standard dei nativi corrispondenti al primo punto di taratura. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.014 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.050 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤20%; risultato: 3.5%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 74 - 146%; risultato: 97%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.24 ng/kg<br></p>
+</section>
+<section id="livello-2-ngkg-1" class="level4">
+<h4 class="anchored" data-anchor-id="livello-2-ngkg-1">Livello 2 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sedimento marino previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.11 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.41 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤20%; risultato: 6.0%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 74 - 146%; risultato: 93%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 1.2 ng/kg<br></p>
+</section>
+</section>
+<section id="i-teq-pcddf" class="level3">
+<h3 class="anchored" data-anchor-id="i-teq-pcddf">I-TEQ-PCDD/F</h3>
+<p><strong>LOQ</strong>: requisito: ≤0.7 ng/kg; risultato: 0.40 ng/kg; esito: ✅<br> <strong>Intervallo di lavoro</strong>: 0.4–692 ng/kg<br> <strong>Intervallo di linearità</strong>: non applicabile<br></p>
+<section id="livello-0.398-ngkg" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.398-ngkg">Livello 0.398 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sabbia purificata e aggiunta con lo standard dei nativi corrispondenti al primo punto di taratura. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.010 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.038 ng/kg<br></li>
+<li><strong>CV%</strong>: risultato: 2.6%<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: risultato: 100%<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.24 ng/kg<br></p>
+</section>
+<section id="livello-1.984-ngkg" class="level4">
+<h4 class="anchored" data-anchor-id="livello-1.984-ngkg">Livello 1.984 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sedimento marino previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.11 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.40 ng/kg<br></li>
+<li><strong>CV%</strong>: risultato: 5.6%<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: risultato: 98%<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 1.2 ng/kg<br></p>
+</section>
+</section>
+<section id="oms-teq-pcddf" class="level3">
+<h3 class="anchored" data-anchor-id="oms-teq-pcddf">OMS-TEQ-PCDD/F</h3>
+<p><strong>LOQ</strong>: requisito: ≤0.7 ng/kg; risultato: 0.50 ng/kg; esito: ✅<br> <strong>Intervallo di lavoro</strong>: 0.4–912 ng/kg<br> <strong>Intervallo di linearità</strong>: non applicabile<br></p>
+<section id="livello-0.443-ngkg" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.443-ngkg">Livello 0.443 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sabbia purificata e aggiunta con lo standard dei nativi corrispondenti al primo punto di taratura. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.017 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.062 ng/kg<br></li>
+<li><strong>CV%</strong>: risultato: 3.7%<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: risultato: 100%<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.27 ng/kg<br></p>
+</section>
+<section id="livello-2.179-ngkg" class="level4">
+<h4 class="anchored" data-anchor-id="livello-2.179-ngkg">Livello 2.179 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sedimento marino previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.11 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.39 ng/kg<br></li>
+<li><strong>CV%</strong>: risultato: 4.9%<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: risultato: 100%<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 1.3 ng/kg<br></p>
+<hr>
+</section>
+</section>
+</section>
+</section>
+<section id="terreno" class="level1">
+<h1>Terreno</h1>
+<section id="parametri-prestazionali-e-criteri-di-accettabilità-1" class="level2">
+<h2 class="anchored" data-anchor-id="parametri-prestazionali-e-criteri-di-accettabilità-1">Parametri prestazionali e criteri di accettabilità</h2>
+<p>In questa sezione sono descritti i parametri prestazionali adottati per la valutazione del metodo applicato alla matrice <strong>terreni</strong>.<br>
+I metodi di calcolo utilizzati sono definiti in documenti operativi dedicati; nel presente rapporto tali metodi vengono applicati ai dati sperimentali raccolti e confrontati con i requisiti previsti.</p>
+<section id="limite-di-quantificazione-loq-1" class="level3">
+<h3 class="anchored" data-anchor-id="limite-di-quantificazione-loq-1">Limite di quantificazione (LOQ)</h3>
+<p>Il limite di quantificazione è determinato a partire dal punto più basso della retta di taratura strumentale.</p>
+<section id="requisiti-sul-limite-di-quantificazione-1" class="level4">
+<h4 class="anchored" data-anchor-id="requisiti-sul-limite-di-quantificazione-1">Requisiti sul limite di quantificazione</h4>
+<p>Per la matrice terreni, il requisito sul LOQ è definito tenendo conto dei limiti normativi applicabili ai parametri di interesse. In particolare, il valore obiettivo è fissato a <strong>0.6 ng/kg</strong>, in modo da garantire:</p>
+<ul>
+<li>il raggiungimento di almeno <strong>1/10 del valore del limite di legge</strong> previsto per il parametro I-TEQ PCDD/F (D.Lgs. 152/06);</li>
+<li>il rispetto del valore di LOQ indicato per il parametro OMS-TEQ PCDD/F + PCBdl, più restrittivo rispetto al precedente (decreto 46/2019).</li>
+</ul>
+<p>La conformità del LOQ ottenuto viene verificata confrontando il valore calcolato con il requisito stabilito. Il requisito è considerato soddisfatto quando il LOQ determinato sperimentalmente risulta inferiore o uguale al valore obiettivo stabilito.</p>
+</section>
+</section>
+<section id="intervallo-di-lavoro-1" class="level3">
+<h3 class="anchored" data-anchor-id="intervallo-di-lavoro-1">Intervallo di lavoro</h3>
+<p>L’intervallo di lavoro del metodo è definito come l’intervallo compreso tra il limite di quantificazione e l’estremo superiore della retta di taratura.</p>
+<p>All’interno di tale intervallo il metodo è applicato per la valutazione delle prestazioni e per la successiva produzione dei risultati analitici.</p>
+</section>
+<section id="intervallo-di-linearità-1" class="level3">
+<h3 class="anchored" data-anchor-id="intervallo-di-linearità-1">Intervallo di linearità</h3>
+<p>L’intervallo di linearità coincide con l’intervallo compreso tra l’estremo inferiore e l’estremo superiore della retta di taratura.</p>
+<p>La linearità del metodo è verificata nell’intero intervallo considerato, assumendo che al suo interno la risposta strumentale sia adeguatamente descritta dal modello di calibrazione adottato.</p>
+</section>
+<section id="precisione-1" class="level3">
+<h3 class="anchored" data-anchor-id="precisione-1">Precisione</h3>
+<p>La precisione del metodo è valutata in termini di ripetibilità ed è espressa mediante la deviazione standard, il limite di ripetibilità e il coefficiente di variazione.</p>
+<section id="deviazione-standard-di-ripetibilità-s-1" class="level4">
+<h4 class="anchored" data-anchor-id="deviazione-standard-di-ripetibilità-s-1">Deviazione standard di ripetibilità (s)</h4>
+<p>La deviazione standard di ripetibilità (<span class="math inline">\(s\)</span>) è calcolata a partire da sei prove indipendenti eseguite allo stesso livello di concentrazione.</p>
+<p>Per concentrazioni diverse da quelle studiate in fase di validazione, il valore di ripetibilità (<span class="math inline">\(S_r\)</span>) è stimato utilizzando il coefficiente di variazione determinato al livello più prossimo, assumendo una dipendenza lineare dalla concentrazione:</p>
+<p><span class="math display">\[
+S_r = \mathrm{CV\%} / 100 \cdot C
+\]</span></p>
+</section>
+<section id="limite-di-ripetibilità-r-1" class="level4">
+<h4 class="anchored" data-anchor-id="limite-di-ripetibilità-r-1">Limite di ripetibilità (r)</h4>
+<p>Il limite di ripetibilità (<span class="math inline">\(r\)</span>) è calcolato utilizzando il valore del coefficiente di Student a due code corrispondente a un livello di confidenza del 95%.</p>
+</section>
+<section id="requisiti-sulla-precisione-1" class="level4">
+<h4 class="anchored" data-anchor-id="requisiti-sulla-precisione-1">Requisiti sulla precisione</h4>
+<p>Il requisito sulla precisione è espresso in termini di CV% ed è definito come il valore più restrittivo tra:</p>
+<ul>
+<li>il criterio previsto dal metodo normato di riferimento;</li>
+<li>il criterio derivante dalla linea guida per la stima dell’incertezza di misura, espresso come rapporto tra la ripetibilità e l’incertezza tipo associata al metodo.</li>
+</ul>
+<p>La conformità è verificata confrontando il CV% ottenuto con il valore massimo ammissibile.</p>
+</section>
+</section>
+<section id="esattezza-1" class="level3">
+<h3 class="anchored" data-anchor-id="esattezza-1">Esattezza</h3>
+<p>L’esattezza del metodo è espressa mediante il <strong>recupero percentuale</strong>, calcolato come rapporto tra la media dei valori ottenuti da sei prove indipendenti e il valore di riferimento.</p>
+<p>Il valore di riferimento è determinato a partire dall’aggiunta nota di analita effettuata sul campione reale.</p>
+<section id="requisiti-sullesattezza-1" class="level4">
+<h4 class="anchored" data-anchor-id="requisiti-sullesattezza-1">Requisiti sull’esattezza</h4>
+<p>Il requisito sull’esattezza è definito come l’intervallo di recupero previsto dal metodo normato di riferimento per i singoli analiti.</p>
+<p>La conformità è verificata controllando che i valori di recupero rientrino nell’intervallo accettabile.</p>
+</section>
+</section>
+<section id="incertezza-di-misura-1" class="level3">
+<h3 class="anchored" data-anchor-id="incertezza-di-misura-1">Incertezza di misura</h3>
+<p>L’incertezza associata ai valori di concentrazione misurati è stimata applicando l’approccio previsto dalla linea guida SNPA per la matrice terreni.</p>
+<p>Per i singoli congeneri viene considerata un’incertezza tipo pari al 30% del valore misurato.<br>
+L’incertezza associata ai parametri di sommatoria è determinata combinando le incertezze dei singoli contributi.</p>
+<p>L’incertezza estesa è calcolata utilizzando un fattore di copertura <span class="math inline">\(k = 2\)</span> ed è applicata all’intero intervallo di lavoro.</p>
+<section id="verifiche-di-coerenza-tra-precisione-e-incertezza-1" class="level4">
+<h4 class="anchored" data-anchor-id="verifiche-di-coerenza-tra-precisione-e-incertezza-1">Verifiche di coerenza tra precisione e incertezza</h4>
+<p>La coerenza tra i parametri di precisione e l’incertezza stimata è verificata mediante il controllo della relazione tra limite di ripetibilità e incertezza estesa (<span class="math inline">\(2\, U &gt; r\)</span>).</p>
+<p>In aggiunta, valore atteso del circuito interlaboratorio deve essere compreso all’interno dell’intervallo di valori individuato dall’incertezza estesa della misura effettuata dal laboratorio.</p>
+</section>
+</section>
+</section>
+<section id="piano-delle-prove-di-validazione-1" class="level2">
+<h2 class="anchored" data-anchor-id="piano-delle-prove-di-validazione-1">Piano delle prove di validazione</h2>
+<p>In questa sezione è descritto il piano delle prove sperimentali adottato per la valutazione delle prestazioni del metodo applicato alla matrice <strong>terreni</strong>.</p>
+<p>Il piano delle prove è stato definito in modo da consentire la verifica dei requisiti prestazionali individuati per ciascun parametro, garantendo al tempo stesso la rappresentatività delle condizioni operative del metodo.</p>
+<p>Le prove sono state eseguite su campioni di matrice reale, opportunamente selezionati e caratterizzati, mediante aggiunta nota degli analiti di interesse.</p>
+<section id="matrice-e-campioni-1" class="level3">
+<h3 class="anchored" data-anchor-id="matrice-e-campioni-1">Matrice e campioni</h3>
+<p>La matrice considerata è costituita da <strong>terreni</strong>, selezionati in modo da rappresentare una variabilità realistica delle caratteristiche fisico-chimiche tipiche dei campioni analizzati routinariamente.</p>
+<p>I campioni utilizzati per le prove di validazione sono stati preventivamente verificati per l’assenza di concentrazioni significative degli analiti oggetto di studio, al fine di rendere trascurabile il contributo del contenuto nativo rispetto all’aggiunta effettuata.</p>
+</section>
+<section id="livelli-di-concentrazione-1" class="level3">
+<h3 class="anchored" data-anchor-id="livelli-di-concentrazione-1">Livelli di concentrazione</h3>
+<p>Le prove sono state pianificate su più livelli di concentrazione, scelti in relazione ai requisiti normativi e agli obiettivi del metodo.</p>
+<p>In particolare, sono stati considerati:</p>
+<ul>
+<li>un <strong>livello basso</strong>, prossimo al limite di quantificazione, rappresentativo delle condizioni più critiche per la misura;</li>
+<li>un <strong>livello alto</strong>, corrispondente al 20% del limite normativo più restrittivo.</li>
+</ul>
+<p>La selezione dei livelli consente di valutare le prestazioni del metodo sull’intero intervallo di applicazione previsto.</p>
+</section>
+<section id="prove-con-aggiunta-nota-1" class="level3">
+<h3 class="anchored" data-anchor-id="prove-con-aggiunta-nota-1">Prove con aggiunta nota</h3>
+<p>Per ciascun livello di concentrazione sono state eseguite prove con <strong>aggiunta nota degli analiti</strong> su campioni di terreno.</p>
+<p>Le aggiunte sono state effettuate utilizzando soluzioni di riferimento a concentrazione nota, in modo da ottenere nel campione finale i livelli di concentrazione pianificati.</p>
+<p>Per ogni livello sono state preparate <strong>sei repliche indipendenti</strong>, trattate come campioni distinti lungo l’intero procedimento analitico.</p>
+<p>Questa impostazione consente la valutazione della precisione in condizioni di ripetibilità e la stima dell’esattezza mediante confronto con il valore di riferimento.</p>
+</section>
+<section id="sequenza-operativa-e-controlli-1" class="level3">
+<h3 class="anchored" data-anchor-id="sequenza-operativa-e-controlli-1">Sequenza operativa e controlli</h3>
+<p>Le prove sono state distribuite su più sessioni analitiche, mantenendo costanti le principali condizioni operative del metodo.</p>
+<p>All’interno delle sequenze analitiche sono stati inclusi:</p>
+<ul>
+<li>campioni di controllo a concentrazione nota;</li>
+<li>bianchi di procedura;</li>
+<li>verifiche della risposta strumentale.</li>
+</ul>
+<p>I controlli sono stati utilizzati per monitorare la stabilità del sistema analitico e per supportare la valutazione dei contributi all’incertezza di misura.</p>
+</section>
+</section>
+<section id="risultati-1" class="level2">
+<h2 class="anchored" data-anchor-id="risultati-1">Risultati</h2>
+<section id="tcdd-1" class="level3">
+<h3 class="anchored" data-anchor-id="tcdd-1">2,3,7,8-TCDD</h3>
+<p><strong>LOQ</strong>: risultato: 0.040 ng/kg<br> <strong>Intervallo di lavoro</strong>: 0.02–40 ng/ml; 0.04–80 ng/kg<br> <strong>Intervallo di linearità</strong>: 0.02–40 ng/ml; 0.04–80 ng/kg<br></p>
+<section id="livello-0.04-ngkg" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.04-ngkg">Livello 0.04 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sabbia purificata e aggiunta con lo standard dei nativi corrispondenti al primo punto di taratura. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.0020 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.0071 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤20%; risultato: 4.7%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 83 - 129%; risultato: 100%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.024 ng/kg<br></p>
+</section>
+<section id="livello-0.2-ngkg-2" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.2-ngkg-2">Livello 0.2 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di terreno previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.0060 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.022 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤20%; risultato: 3.1%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 83 - 129%; risultato: 96%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.12 ng/kg<br></p>
+</section>
+</section>
+<section id="tcdf-1" class="level3">
+<h3 class="anchored" data-anchor-id="tcdf-1">2,3,7,8-TCDF</h3>
+<p><strong>LOQ</strong>: risultato: 0.040 ng/kg<br> <strong>Intervallo di lavoro</strong>: 0.02–40 ng/ml; 0.04–80 ng/kg<br> <strong>Intervallo di linearità</strong>: 0.02–40 ng/ml; 0.04–80 ng/kg<br></p>
+<section id="livello-0.04-ngkg-1" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.04-ngkg-1">Livello 0.04 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sabbia purificata e aggiunta con lo standard dei nativi corrispondenti al primo punto di taratura. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.0016 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.0057 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤20%; risultato: 4.0%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 87 - 137%; risultato: 98%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.024 ng/kg<br></p>
+</section>
+<section id="livello-0.2-ngkg-3" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.2-ngkg-3">Livello 0.2 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di terreno previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.017 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.063 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤20%; risultato: 9.3%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 87 - 137%; risultato: 93%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.12 ng/kg<br></p>
+</section>
+</section>
+<section id="pecdd-1" class="level3">
+<h3 class="anchored" data-anchor-id="pecdd-1">1,2,3,7,8-PeCDD</h3>
+<p><strong>LOQ</strong>: risultato: 0.20 ng/kg<br> <strong>Intervallo di lavoro</strong>: 0.1–200 ng/ml; 0.2–400 ng/kg<br> <strong>Intervallo di linearità</strong>: 0.1–200 ng/ml; 0.2–400 ng/kg<br></p>
+<section id="livello-0.2-ngkg-4" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.2-ngkg-4">Livello 0.2 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di terreno previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.018 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.065 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤15%; risultato: 8.8%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 76 - 132%; risultato: 100%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.12 ng/kg<br></p>
+</section>
+<section id="livello-1-ngkg-13" class="level4">
+<h4 class="anchored" data-anchor-id="livello-1-ngkg-13">Livello 1 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di terreno previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.041 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.15 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤15%; risultato: 4.1%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 76 - 132%; risultato: 100%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.60 ng/kg<br></p>
+</section>
+</section>
+<section id="pecdf-2" class="level3">
+<h3 class="anchored" data-anchor-id="pecdf-2">1,2,3,7,8-PeCDF</h3>
+<p><strong>LOQ</strong>: risultato: 0.20 ng/kg<br> <strong>Intervallo di lavoro</strong>: 0.1–200 ng/ml; 0.2–400 ng/kg<br> <strong>Intervallo di linearità</strong>: 0.1–200 ng/ml; 0.2–400 ng/kg<br></p>
+<section id="livello-0.2-ngkg-5" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.2-ngkg-5">Livello 0.2 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di terreno previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.018 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.065 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤15%; risultato: 8.8%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 86 - 124%; risultato: 100%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.12 ng/kg<br></p>
+</section>
+<section id="livello-1-ngkg-14" class="level4">
+<h4 class="anchored" data-anchor-id="livello-1-ngkg-14">Livello 1 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di terreno previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.041 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.15 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤15%; risultato: 4.1%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 86 - 124%; risultato: 100%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.60 ng/kg<br></p>
+</section>
+</section>
+<section id="pecdf-3" class="level3">
+<h3 class="anchored" data-anchor-id="pecdf-3">2,3,4,7,8-PeCDF</h3>
+<p><strong>LOQ</strong>: risultato: 0.20 ng/kg<br> <strong>Intervallo di lavoro</strong>: 0.1–200 ng/ml; 0.2–400 ng/kg<br> <strong>Intervallo di linearità</strong>: 0.1–200 ng/ml; 0.2–400 ng/kg<br></p>
+<section id="livello-0.2-ngkg-6" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.2-ngkg-6">Livello 0.2 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di terreno previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.011 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.040 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤17%; risultato: 5.6%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 72 - 150%; risultato: 99%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.12 ng/kg<br></p>
+</section>
+<section id="livello-1-ngkg-15" class="level4">
+<h4 class="anchored" data-anchor-id="livello-1-ngkg-15">Livello 1 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di terreno previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.080 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.29 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤17%; risultato: 8.1%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 72 - 150%; risultato: 99%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.60 ng/kg<br></p>
+</section>
+</section>
+<section id="hxcdd-3" class="level3">
+<h3 class="anchored" data-anchor-id="hxcdd-3">1,2,3,4,7,8-HxCDD</h3>
+<p><strong>LOQ</strong>: risultato: 0.20 ng/kg<br> <strong>Intervallo di lavoro</strong>: 0.1–200 ng/ml; 0.2–400 ng/kg<br> <strong>Intervallo di linearità</strong>: 0.1–200 ng/ml; 0.2–400 ng/kg<br></p>
+<section id="livello-0.2-ngkg-7" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.2-ngkg-7">Livello 0.2 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di terreno previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.010 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.038 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤19%; risultato: 4.5%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 78 - 152%; risultato: 110%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.12 ng/kg<br></p>
+</section>
+<section id="livello-1-ngkg-16" class="level4">
+<h4 class="anchored" data-anchor-id="livello-1-ngkg-16">Livello 1 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di terreno previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.080 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.29 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤19%; risultato: 8.0%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 78 - 152%; risultato: 100%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.60 ng/kg<br></p>
+</section>
+</section>
+<section id="hxcdf-4" class="level3">
+<h3 class="anchored" data-anchor-id="hxcdf-4">1,2,3,4,7,8-HxCDF</h3>
+<p><strong>LOQ</strong>: risultato: 0.20 ng/kg<br> <strong>Intervallo di lavoro</strong>: 0.1–200 ng/ml; 0.2–400 ng/kg<br> <strong>Intervallo di linearità</strong>: 0.1–200 ng/ml; 0.2–400 ng/kg<br></p>
+<section id="livello-0.2-ngkg-8" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.2-ngkg-8">Livello 0.2 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di terreno previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.0061 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.022 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤17%; risultato: 3.3%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 82 - 118%; risultato: 93%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.12 ng/kg<br></p>
+</section>
+<section id="livello-1-ngkg-17" class="level4">
+<h4 class="anchored" data-anchor-id="livello-1-ngkg-17">Livello 1 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di terreno previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.054 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.20 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤17%; risultato: 6.3%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 82 - 118%; risultato: 85%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.60 ng/kg<br></p>
+</section>
+</section>
+<section id="hxcdd-4" class="level3">
+<h3 class="anchored" data-anchor-id="hxcdd-4">1,2,3,6,7,8-HxCDD</h3>
+<p><strong>LOQ</strong>: risultato: 0.20 ng/kg<br> <strong>Intervallo di lavoro</strong>: 0.1–200 ng/ml; 0.2–400 ng/kg<br> <strong>Intervallo di linearità</strong>: 0.1–200 ng/ml; 0.2–400 ng/kg<br></p>
+<section id="livello-0.2-ngkg-9" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.2-ngkg-9">Livello 0.2 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di terreno previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.010 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.038 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤15%; risultato: 5.4%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 84 - 124%; risultato: 96%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.12 ng/kg<br></p>
+</section>
+<section id="livello-1-ngkg-18" class="level4">
+<h4 class="anchored" data-anchor-id="livello-1-ngkg-18">Livello 1 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di terreno previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.050 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.18 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤15%; risultato: 5.4%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 84 - 124%; risultato: 92%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.60 ng/kg<br></p>
+</section>
+</section>
+<section id="hxcdf-5" class="level3">
+<h3 class="anchored" data-anchor-id="hxcdf-5">1,2,3,6,7,8-HxCDF</h3>
+<p><strong>LOQ</strong>: risultato: 0.20 ng/kg<br> <strong>Intervallo di lavoro</strong>: 0.1–200 ng/ml; 0.2–400 ng/kg<br> <strong>Intervallo di linearità</strong>: 0.1–200 ng/ml; 0.2–400 ng/kg<br></p>
+<section id="livello-0.2-ngkg-10" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.2-ngkg-10">Livello 0.2 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di terreno previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.010 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.038 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤13%; risultato: 5.1%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 92 - 120%; risultato: 100%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.12 ng/kg<br></p>
+</section>
+<section id="livello-1-ngkg-19" class="level4">
+<h4 class="anchored" data-anchor-id="livello-1-ngkg-19">Livello 1 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di terreno previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.067 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.24 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤13%; risultato: 7.1%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 92 - 120%; risultato: 94%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.60 ng/kg<br></p>
+</section>
+</section>
+<section id="hxcdd-5" class="level3">
+<h3 class="anchored" data-anchor-id="hxcdd-5">1,2,3,7,8,9-HxCDD</h3>
+<p><strong>LOQ</strong>: risultato: 0.20 ng/kg<br> <strong>Intervallo di lavoro</strong>: 0.1–200 ng/ml; 0.2–400 ng/kg<br> <strong>Intervallo di linearità</strong>: 0.1–200 ng/ml; 0.2–400 ng/kg<br></p>
+<section id="livello-0.2-ngkg-11" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.2-ngkg-11">Livello 0.2 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di terreno previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.015 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.053 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤20%; risultato: 7.6%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 74 - 142%; risultato: 96%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.12 ng/kg<br></p>
+</section>
+<section id="livello-1-ngkg-20" class="level4">
+<h4 class="anchored" data-anchor-id="livello-1-ngkg-20">Livello 1 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di terreno previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.099 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.36 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤20%; risultato: 11%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 74 - 142%; risultato: 93%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.60 ng/kg<br></p>
+</section>
+</section>
+<section id="hxcdf-6" class="level3">
+<h3 class="anchored" data-anchor-id="hxcdf-6">1,2,3,7,8,9-HxCDF</h3>
+<p><strong>LOQ</strong>: risultato: 0.20 ng/kg<br> <strong>Intervallo di lavoro</strong>: 0.1–200 ng/ml; 0.2–400 ng/kg<br> <strong>Intervallo di linearità</strong>: 0.1–200 ng/ml; 0.2–400 ng/kg<br></p>
+<section id="livello-0.2-ngkg-12" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.2-ngkg-12">Livello 0.2 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di terreno previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.0099 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.036 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤13%; risultato: 4.8%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 84 - 122%; risultato: 100%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.12 ng/kg<br></p>
+</section>
+<section id="livello-1-ngkg-21" class="level4">
+<h4 class="anchored" data-anchor-id="livello-1-ngkg-21">Livello 1 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di terreno previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.070 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.26 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤13%; risultato: 7.3%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 84 - 122%; risultato: 96%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.60 ng/kg<br></p>
+</section>
+</section>
+<section id="hxcdf-7" class="level3">
+<h3 class="anchored" data-anchor-id="hxcdf-7">2,3,4,6,7,8-HxCDF</h3>
+<p><strong>LOQ</strong>: risultato: 0.20 ng/kg<br> <strong>Intervallo di lavoro</strong>: 0.1–200 ng/ml; 0.2–400 ng/kg<br> <strong>Intervallo di linearità</strong>: 0.1–200 ng/ml; 0.2–400 ng/kg<br></p>
+<section id="livello-0.2-ngkg-13" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.2-ngkg-13">Livello 0.2 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di terreno previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.0093 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.034 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤15%; risultato: 4.5%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 74 - 148%; risultato: 100%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.12 ng/kg<br></p>
+</section>
+<section id="livello-1-ngkg-22" class="level4">
+<h4 class="anchored" data-anchor-id="livello-1-ngkg-22">Livello 1 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di terreno previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.092 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.34 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤15%; risultato: 9.6%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 74 - 148%; risultato: 96%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.60 ng/kg<br></p>
+</section>
+</section>
+<section id="hpcdd-1" class="level3">
+<h3 class="anchored" data-anchor-id="hpcdd-1">1,2,3,4,6,7,8-HpCDD</h3>
+<p><strong>LOQ</strong>: risultato: 0.20 ng/kg<br> <strong>Intervallo di lavoro</strong>: 0.1–200 ng/ml; 0.2–400 ng/kg<br> <strong>Intervallo di linearità</strong>: 0.1–200 ng/ml; 0.2–400 ng/kg<br></p>
+<section id="livello-0.2-ngkg-14" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.2-ngkg-14">Livello 0.2 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di terreno previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.014 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.050 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤15%; risultato: 7.0%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 76 - 130%; risultato: 99%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.12 ng/kg<br></p>
+</section>
+<section id="livello-1-ngkg-23" class="level4">
+<h4 class="anchored" data-anchor-id="livello-1-ngkg-23">Livello 1 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di terreno previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.10 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.38 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤15%; risultato: 11%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 76 - 130%; risultato: 92%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.60 ng/kg<br></p>
+</section>
+</section>
+<section id="hpcdf-2" class="level3">
+<h3 class="anchored" data-anchor-id="hpcdf-2">1,2,3,4,6,7,8-HpCDF</h3>
+<p><strong>LOQ</strong>: risultato: 0.20 ng/kg<br> <strong>Intervallo di lavoro</strong>: 0.1–200 ng/ml; 0.2–400 ng/kg<br> <strong>Intervallo di linearità</strong>: 0.1–200 ng/ml; 0.2–400 ng/kg<br></p>
+<section id="livello-0.2-ngkg-15" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.2-ngkg-15">Livello 0.2 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di terreno previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.010 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.038 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤13%; risultato: 5.2%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 90 - 112%; risultato: 99%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.12 ng/kg<br></p>
+</section>
+<section id="livello-1-ngkg-24" class="level4">
+<h4 class="anchored" data-anchor-id="livello-1-ngkg-24">Livello 1 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di terreno previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.075 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.27 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤13%; risultato: 8.0%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 90 - 112%; risultato: 94%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.60 ng/kg<br></p>
+</section>
+</section>
+<section id="hpcdf-3" class="level3">
+<h3 class="anchored" data-anchor-id="hpcdf-3">1,2,3,4,7,8,9-HpCDF</h3>
+<p><strong>LOQ</strong>: risultato: 0.20 ng/kg<br> <strong>Intervallo di lavoro</strong>: 0.1–200 ng/ml; 0.2–400 ng/kg<br> <strong>Intervallo di linearità</strong>: 0.1–200 ng/ml; 0.2–400 ng/kg<br></p>
+<section id="livello-0.2-ngkg-16" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.2-ngkg-16">Livello 0.2 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di terreno previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.015 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.053 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤16%; risultato: 7.6%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 86 - 126%; risultato: 96%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.12 ng/kg<br></p>
+</section>
+<section id="livello-1-ngkg-25" class="level4">
+<h4 class="anchored" data-anchor-id="livello-1-ngkg-25">Livello 1 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di terreno previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.059 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.21 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤16%; risultato: 6.2%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 86 - 126%; risultato: 94%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.60 ng/kg<br></p>
+</section>
+</section>
+<section id="ocdd-1" class="level3">
+<h3 class="anchored" data-anchor-id="ocdd-1">OCDD</h3>
+<p><strong>LOQ</strong>: risultato: 0.40 ng/kg<br> <strong>Intervallo di lavoro</strong>: 0.2–400 ng/ml; 0.4–800 ng/kg<br> <strong>Intervallo di linearità</strong>: 0.2–400 ng/ml; 0.4–800 ng/kg<br></p>
+<section id="livello-0.4-ngkg-15" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.4-ngkg-15">Livello 0.4 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sabbia purificata e aggiunta con lo standard dei nativi corrispondenti al primo punto di taratura. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.038 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.14 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤19%; risultato: 9.2%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 89 - 127%; risultato: 100%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.24 ng/kg<br></p>
+</section>
+<section id="livello-2-ngkg-2" class="level4">
+<h4 class="anchored" data-anchor-id="livello-2-ngkg-2">Livello 2 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di terreno previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.23 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.82 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤19%; risultato: 12%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 89 - 127%; risultato: 95%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 1.2 ng/kg<br></p>
+</section>
+</section>
+<section id="ocdf-1" class="level3">
+<h3 class="anchored" data-anchor-id="ocdf-1">OCDF</h3>
+<p><strong>LOQ</strong>: risultato: 0.40 ng/kg<br> <strong>Intervallo di lavoro</strong>: 0.2–400 ng/ml; 0.4–800 ng/kg<br> <strong>Intervallo di linearità</strong>: 0.2–400 ng/ml; 0.4–800 ng/kg<br></p>
+<section id="livello-0.4-ngkg-16" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.4-ngkg-16">Livello 0.4 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sabbia purificata e aggiunta con lo standard dei nativi corrispondenti al primo punto di taratura. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.014 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.050 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤20%; risultato: 3.5%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 74 - 146%; risultato: 97%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.24 ng/kg<br></p>
+</section>
+<section id="livello-2-ngkg-3" class="level4">
+<h4 class="anchored" data-anchor-id="livello-2-ngkg-3">Livello 2 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di terreno previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.11 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.41 ng/kg<br></li>
+<li><strong>CV%</strong>: requisito: ≤20%; risultato: 6.0%; esito: ✅<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: requisito: 74 - 146%; risultato: 93%; esito: ✅<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 1.2 ng/kg<br></p>
+</section>
+</section>
+<section id="i-teq-pcddf-1" class="level3">
+<h3 class="anchored" data-anchor-id="i-teq-pcddf-1">I-TEQ-PCDD/F</h3>
+<p><strong>LOQ</strong>: requisito: ≤0.6 ng/kg; risultato: 0.40 ng/kg; esito: ✅<br> <strong>Intervallo di lavoro</strong>: 0.4–802 ng/kg<br> <strong>Intervallo di linearità</strong>: non applicabile<br></p>
+<section id="livello-0.401-ngkg" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.401-ngkg">Livello 0.401 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sabbia purificata e aggiunta con lo standard dei nativi corrispondenti al primo punto di taratura. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.010 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.038 ng/kg<br></li>
+<li><strong>CV%</strong>: risultato: 2.6%<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: risultato: 100%<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.24 ng/kg<br></p>
+</section>
+<section id="livello-2.004-ngkg" class="level4">
+<h4 class="anchored" data-anchor-id="livello-2.004-ngkg">Livello 2.004 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di terreno previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.11 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.40 ng/kg<br></li>
+<li><strong>CV%</strong>: risultato: 5.6%<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: risultato: 97%<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 1.2 ng/kg<br></p>
+</section>
+</section>
+<section id="oms-teq-pcddf-1" class="level3">
+<h3 class="anchored" data-anchor-id="oms-teq-pcddf-1">OMS-TEQ-PCDD/F</h3>
+<p><strong>LOQ</strong>: requisito: ≤0.6 ng/kg; risultato: 0.50 ng/kg; esito: ✅<br> <strong>Intervallo di lavoro</strong>: 0.5–912 ng/kg<br> <strong>Intervallo di linearità</strong>: non applicabile<br></p>
+<section id="livello-0.456-ngkg" class="level4">
+<h4 class="anchored" data-anchor-id="livello-0.456-ngkg">Livello 0.456 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di sabbia purificata e aggiunta con lo standard dei nativi corrispondenti al primo punto di taratura. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.017 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.062 ng/kg<br></li>
+<li><strong>CV%</strong>: risultato: 3.7%<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: risultato: 100%<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 0.27 ng/kg<br></p>
+</section>
+<section id="livello-2.281-ngkg" class="level4">
+<h4 class="anchored" data-anchor-id="livello-2.281-ngkg">Livello 2.281 ng/kg</h4>
+<p>Prove effettuate su 6 campioni di terreno previamente pulito e controllato e aggiunta con lo standard dei nativi corrispondente 1/10 del limite normativo. Estrazione con strumento XG231, purificazione effettuata con strumento PF541 e misura effettuata con lo spettrometro di massa MS541.</p>
+<p><strong>Controlli sui dati</strong>:</p>
+<ul>
+<li><strong>Normalità</strong>: i valori sono compatibili con una distribuzione normale.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 95\%\)</span>): nessun valore anomalo.<br></li>
+<li><strong>Outlier</strong> (<span class="math inline">\(\alpha = 99\%\)</span>): nessun valore anomalo.<br></li>
+</ul>
+<p><strong>Precisione</strong>:</p>
+<ul>
+<li><span class="math inline">\(s\)</span>: risultato: 0.11 ng/kg<br></li>
+<li><span class="math inline">\(r\)</span>: risultato: 0.39 ng/kg<br></li>
+<li><strong>CV%</strong>: risultato: 4.9%<br></li>
+</ul>
+<p><strong>Esattezza</strong>:</p>
+<ul>
+<li><strong>recupero</strong>: risultato: 97%<br></li>
+</ul>
+<p><strong>Incertezza</strong>: 1.4 ng/kg<br></p>
+</section>
+</section>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiato!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiato!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
