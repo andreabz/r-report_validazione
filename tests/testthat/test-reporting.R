@@ -50,3 +50,79 @@ test_that("capitalizza mette maiuscola la prima lettera", {
   expect_equal(capitalizza("xyz"), "Xyz")
 })
 
+# --- Grafico dei valori misurati --- #
+test_that("plot_dispersione restituisce un oggetto ggplot", {
+  p <- plot_dispersione(
+    dt_test,
+    livello = "livello",
+    valore  = "valore_misurato",
+    udm     = "udm"
+  )
+
+  expect_s3_class(p, "ggplot")
+})
+
+test_that("plot_dispersione funziona all'interno di data.table per gruppi", {
+  res <- dt_test[
+    ,
+    .(grafico = list(
+      plot_dispersione(
+        .SD,
+        livello = "livello",
+        valore  = "valore_misurato",
+        udm     = "udm"
+      )
+    )),
+    by = .(matrice, analita)
+  ]
+
+  expect_true(is.list(res$grafico))
+  expect_s3_class(res$grafico[[1]], "ggplot")
+})
+
+test_that("plot_dispersione fallisce con input non valido", {
+  expect_error(
+    plot_dispersione(
+      as.data.frame(dt_test),
+      livello = "livello",
+      valore  = "valore_misurato",
+      udm     = "udm"
+    )
+  )
+
+  expect_error(
+    plot_dispersione(
+      dt_test,
+      livello = "livello",
+      valore  = "valore_che_non_esiste",
+      udm     = "udm"
+    )
+  )
+})
+
+test_that("plot_dispersione fallisce con unità di misura incoerenti", {
+  dt_bad <- copy(dt_test)
+  dt_bad$udm <- c("ng/kg", "ng/kg", "µg/kg", "ng/kg", "ng/kg",
+                  "ng/kg", "ng/kg", "ng/kg", "ng/kg", "ng/kg")
+
+  expect_error(
+    plot_dispersione(
+      dt_bad,
+      livello = "livello",
+      valore  = "valore_misurato",
+      udm     = "udm"
+    )
+  )
+})
+
+test_that("plot_dispersione limita correttamente i livelli di k", {
+  expect_error(
+    plot_dispersione(
+      dt_test,
+      livello = "livello",
+      valore  = "valore_misurato",
+      udm     = "udm",
+      k = c(1, 2, 3)
+    )
+  )
+})

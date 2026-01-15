@@ -128,3 +128,39 @@ testthat::test_that("normalità Shapiro - controlli input", {
   expect_error(normalita_shapiro(1:10, alpha = 0))
   expect_error(normalita_shapiro(1:10, alpha = 1))
 })
+
+# --- Bande di dispersione robuste --- #
+test_that("banda_robusta calcola correttamente mediana e MAD", {
+  x <- c(10, 11, 9, 10, 12, 11, 10)
+
+  res <- banda_robusta(x, k = 2)
+
+  expect_s3_class(res, "data.frame")
+  expect_true(all(c("mediana", "mad", "k", "lower", "upper") %in% names(res)))
+
+  expect_equal(res$mediana, median(x))
+  expect_equal(res$mad, mad(x, constant = 1.4826))
+  expect_equal(res$k, 2)
+
+  expect_equal(res$lower, res$mediana - 2 * res$mad)
+  expect_equal(res$upper, res$mediana + 2 * res$mad)
+})
+
+test_that("banda_robusta gestisce NA correttamente", {
+  x <- c(10, 11, 9, 10, 12, NA, NA)
+
+  res <- banda_robusta(x, k = 3, na.rm = TRUE)
+
+  expect_equal(res$mediana, median(x, na.rm = TRUE))
+})
+
+test_that("banda_robusta fallisce con input non valido", {
+  expect_error(banda_robusta("a"))
+  expect_error(banda_robusta(1:4))              # meno di 5 valori
+  expect_error(banda_robusta(1:10, k = 0))
+  expect_error(banda_robusta(1:10, k = -1))
+})
+
+test_that("banda_robusta fallisce con MAD nulla", {
+  expect_error(banda_robusta(rep(10, 6)))
+})

@@ -78,3 +78,12 @@ uniiso_16269_4_432 <- c(
 #' @keywords data
 
 shapirotest_reference <- c(148, 154, 158, 160, 161, 162, 166, 170, 182, 195, 236)
+
+# Dataset di prova per grafico
+dt_test <- data.table(
+  matrice = "terreno",
+  analita = "A",
+  livello = c(10, 10, 10, 10, 10, 20, 20, 20, 20, 20),
+  valore_misurato = c(9.8, 10.1, 10.0, 10.2, 10.0, 19.5, 20.3, 20.1, 20.0, 19.8),
+  udm = "ng/kg"
+)
