@@ -126,3 +126,25 @@ test_that("plot_dispersione limita correttamente i livelli di k", {
     )
   )
 })
+
+# --- Generazione del report --- #
+test_that("Il report di validazione viene generato correttamente", {
+
+  input <- here::here("report_validazione.qmd")
+  output <- paste0("test_render_", Sys.getpid(), ".html")
+
+  expect_true(file.exists(input))
+
+  expect_silent(
+    quarto::quarto_render(
+      input = input,
+      output_file = output,
+      quiet = TRUE
+    )
+  )
+
+  output_path <- here::here(output)
+  expect_true(file.exists(output_path))
+  expect_gt(file.info(output_path)$size, 0)
+  unlink(output_path)
+})
