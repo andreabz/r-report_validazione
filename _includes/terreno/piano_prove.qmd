@@ -48,7 +48,7 @@ Per ogni livello sono state preparate **sei repliche indipendenti**, trattate
 come campioni distinti lungo l'intero procedimento analitico.
 
 Questa impostazione consente la valutazione della precisione in condizioni di
-ripetibilità e la stima dell'esattezza mediante confronto con il valore di
+ripetibilità e la stima dell'giustezza mediante confronto con il valore di
 riferimento.
 
 ### Sequenza operativa e controlli

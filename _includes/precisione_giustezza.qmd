@@ -14,7 +14,7 @@
   - $r$: `r risultati[variable == "r", format_risultato(requisito_min, requisito_max, value, udm_metrica, esito)]`<br>
   - **CV%**: `r risultati[variable == "cv", format_risultato(requisito_min, requisito_max, value, udm_metrica, esito)]`<br>
 
-**Esattezza**:
+**Giustezza**:
 
   - **recupero**: `r risultati[variable == "recupero", format_risultato(requisito_min, requisito_max, value, udm_metrica, esito)]`<br>
 

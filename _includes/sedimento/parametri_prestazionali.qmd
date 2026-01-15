@@ -75,18 +75,18 @@ valore più restrittivo tra:
 La conformità è verificata confrontando il CV% ottenuto con il valore massimo
 ammissibile.
 
-### Esattezza
+### Giustezza
 
-L'esattezza del metodo è espressa mediante il **recupero percentuale**, calcolato
+L'giustezza del metodo è espressa mediante il **recupero percentuale**, calcolato
 come rapporto tra la media dei valori ottenuti da sei prove indipendenti e il
 valore di riferimento.
 
 Il valore di riferimento è determinato a partire dall'aggiunta nota di analita
 effettuata sul campione reale.
 
-#### Requisiti sull'esattezza
+#### Requisiti sull'giustezza
 
-Il requisito sull'esattezza è definito come l'intervallo di recupero previsto dal
+Il requisito sull'giustezza è definito come l'intervallo di recupero previsto dal
 metodo normato di riferimento per i singoli analiti.
 
 La conformità è verificata controllando che i valori di recupero rientrino

@@ -9,9 +9,9 @@ Di seguito sono riportati alcuni esempi di modifiche tecniche e
 documentali, con l'indicazione della motivazione e dell'azione
 intrapresa.
 
-- **Revisione del livello di esattezza per la matrice suolo - 15/02/2025**  
+- **Revisione del livello di giustezza per la matrice suolo - 15/02/2025**  
   È emersa la necessità di chiarire il livello di concentrazione a cui
-  era stata valutata l'esattezza in fase di validazione per la matrice
+  era stata valutata l'giustezza in fase di validazione per la matrice
   suolo.
 
   Il rapporto è stato integrato specificando il livello utilizzato e

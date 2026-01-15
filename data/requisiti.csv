@@ -1,73 +1,73 @@
 matrice,analita,parametro,requisito_min,requisito_max,espressione,udm,spiegazione
 terreno,"2,3,7,8-TCDD",Precisione,,20,cv,%,"Valore minore tra tabella 6 EPA 1613 e Linea guida SNPA 34/2021 (S_r/u_snpa < 0,66)"
-terreno,"2,3,7,8-TCDD",Esattezza,83,129,recupero,%,tabella 6 EPA 1613
+terreno,"2,3,7,8-TCDD",Giustezza,83,129,recupero,%,tabella 6 EPA 1613
 terreno,"2,3,7,8-TCDF",Precisione,,20,cv,%,"Valore minore tra tabella 6 EPA 1613 e Linea guida SNPA 34/2021 (S_r/u_snpa < 0,66)"
-terreno,"2,3,7,8-TCDF",Esattezza,87,137,recupero,%,tabella 6 EPA 1613
+terreno,"2,3,7,8-TCDF",Giustezza,87,137,recupero,%,tabella 6 EPA 1613
 terreno,"1,2,3,7,8-PeCDD",Precisione,,15,cv,%,"Valore minore tra tabella 6 EPA 1613 e Linea guida SNPA 34/2021 (S_r/u_snpa < 0,66)"
-terreno,"1,2,3,7,8-PeCDD",Esattezza,76,132,recupero,%,tabella 6 EPA 1613
+terreno,"1,2,3,7,8-PeCDD",Giustezza,76,132,recupero,%,tabella 6 EPA 1613
 terreno,"1,2,3,7,8-PeCDF",Precisione,,15,cv,%,"Valore minore tra tabella 6 EPA 1613 e Linea guida SNPA 34/2021 (S_r/u_snpa < 0,66)"
-terreno,"1,2,3,7,8-PeCDF",Esattezza,86,124,recupero,%,tabella 6 EPA 1613
+terreno,"1,2,3,7,8-PeCDF",Giustezza,86,124,recupero,%,tabella 6 EPA 1613
 terreno,"2,3,4,7,8-PeCDF",Precisione,,17,cv,%,"Valore minore tra tabella 6 EPA 1613 e Linea guida SNPA 34/2021 (S_r/u_snpa < 0,66)"
-terreno,"2,3,4,7,8-PeCDF",Esattezza,72,150,recupero,%,tabella 6 EPA 1613
+terreno,"2,3,4,7,8-PeCDF",Giustezza,72,150,recupero,%,tabella 6 EPA 1613
 terreno,"1,2,3,4,7,8-HxCDD",Precisione,,19,cv,%,"Valore minore tra tabella 6 EPA 1613 e Linea guida SNPA 34/2021 (S_r/u_snpa < 0,66)"
-terreno,"1,2,3,4,7,8-HxCDD",Esattezza,78,152,recupero,%,tabella 6 EPA 1613
+terreno,"1,2,3,4,7,8-HxCDD",Giustezza,78,152,recupero,%,tabella 6 EPA 1613
 terreno,"1,2,3,4,7,8-HxCDF",Precisione,,17,cv,%,"Valore minore tra tabella 6 EPA 1613 e Linea guida SNPA 34/2021 (S_r/u_snpa < 0,66)"
-terreno,"1,2,3,4,7,8-HxCDF",Esattezza,82,118,recupero,%,tabella 6 EPA 1613
+terreno,"1,2,3,4,7,8-HxCDF",Giustezza,82,118,recupero,%,tabella 6 EPA 1613
 terreno,"1,2,3,6,7,8-HxCDD",Precisione,,15,cv,%,"Valore minore tra tabella 6 EPA 1613 e Linea guida SNPA 34/2021 (S_r/u_snpa < 0,66)"
-terreno,"1,2,3,6,7,8-HxCDD",Esattezza,84,124,recupero,%,tabella 6 EPA 1613
+terreno,"1,2,3,6,7,8-HxCDD",Giustezza,84,124,recupero,%,tabella 6 EPA 1613
 terreno,"1,2,3,6,7,8-HxCDF",Precisione,,13,cv,%,"Valore minore tra tabella 6 EPA 1613 e Linea guida SNPA 34/2021 (S_r/u_snpa < 0,66)"
-terreno,"1,2,3,6,7,8-HxCDF",Esattezza,92,120,recupero,%,tabella 6 EPA 1613
+terreno,"1,2,3,6,7,8-HxCDF",Giustezza,92,120,recupero,%,tabella 6 EPA 1613
 terreno,"1,2,3,7,8,9-HxCDD",Precisione,,20,cv,%,"Valore minore tra tabella 6 EPA 1613 e Linea guida SNPA 34/2021 (S_r/u_snpa < 0,66)"
-terreno,"1,2,3,7,8,9-HxCDD",Esattezza,74,142,recupero,%,tabella 6 EPA 1613
+terreno,"1,2,3,7,8,9-HxCDD",Giustezza,74,142,recupero,%,tabella 6 EPA 1613
 terreno,"1,2,3,7,8,9-HxCDF",Precisione,,13,cv,%,"Valore minore tra tabella 6 EPA 1613 e Linea guida SNPA 34/2021 (S_r/u_snpa < 0,66)"
-terreno,"1,2,3,7,8,9-HxCDF",Esattezza,84,122,recupero,%,tabella 6 EPA 1613
+terreno,"1,2,3,7,8,9-HxCDF",Giustezza,84,122,recupero,%,tabella 6 EPA 1613
 terreno,"2,3,4,6,7,8-HxCDF",Precisione,,15,cv,%,"Valore minore tra tabella 6 EPA 1613 e Linea guida SNPA 34/2021 (S_r/u_snpa < 0,66)"
-terreno,"2,3,4,6,7,8-HxCDF",Esattezza,74,148,recupero,%,tabella 6 EPA 1613
+terreno,"2,3,4,6,7,8-HxCDF",Giustezza,74,148,recupero,%,tabella 6 EPA 1613
 terreno,"1,2,3,4,6,7,8-HpCDD",Precisione,,15,cv,%,"Valore minore tra tabella 6 EPA 1613 e Linea guida SNPA 34/2021 (S_r/u_snpa < 0,66)"
-terreno,"1,2,3,4,6,7,8-HpCDD",Esattezza,76,130,recupero,%,tabella 6 EPA 1613
+terreno,"1,2,3,4,6,7,8-HpCDD",Giustezza,76,130,recupero,%,tabella 6 EPA 1613
 terreno,"1,2,3,4,6,7,8-HpCDF",Precisione,,13,cv,%,"Valore minore tra tabella 6 EPA 1613 e Linea guida SNPA 34/2021 (S_r/u_snpa < 0,66)"
-terreno,"1,2,3,4,6,7,8-HpCDF",Esattezza,90,112,recupero,%,tabella 6 EPA 1613
+terreno,"1,2,3,4,6,7,8-HpCDF",Giustezza,90,112,recupero,%,tabella 6 EPA 1613
 terreno,"1,2,3,4,7,8,9-HpCDF",Precisione,,16,cv,%,"Valore minore tra tabella 6 EPA 1613 e Linea guida SNPA 34/2021 (S_r/u_snpa < 0,66)"
-terreno,"1,2,3,4,7,8,9-HpCDF",Esattezza,86,126,recupero,%,tabella 6 EPA 1613
+terreno,"1,2,3,4,7,8,9-HpCDF",Giustezza,86,126,recupero,%,tabella 6 EPA 1613
 terreno,OCDD,Precisione,,19,cv,%,"Valore minore tra tabella 6 EPA 1613 e Linea guida SNPA 34/2021 (S_r/u_snpa < 0,66)"
-terreno,OCDD,Esattezza,89,127,recupero,%,tabella 6 EPA 1613
+terreno,OCDD,Giustezza,89,127,recupero,%,tabella 6 EPA 1613
 terreno,OCDF,Precisione,,20,cv,%,"Valore minore tra tabella 6 EPA 1613 e Linea guida SNPA 34/2021 (S_r/u_snpa < 0,66)"
-terreno,OCDF,Esattezza,74,146,recupero,%,tabella 6 EPA 1613
+terreno,OCDF,Giustezza,74,146,recupero,%,tabella 6 EPA 1613
 terreno,OMS-TEQ-PCDD/F,LOQ,,0.6,loq,ng/kg,"Valore minimo tra 1/10 del valore del limite di legge previsto dal D.Lgs. 152/06 (LOQ = 1 ng/kg per I-TEQ PCDD/F), valore previsto dal decreto 46/2019 (LOQ = 0,6 ng/kg per OMS-TEQ PCDD/F + PCBdl)"
 terreno,I-TEQ-PCDD/F,LOQ,,0.6,loq,ng/kg,"Valore minimo tra 1/10 del valore del limite di legge previsto dal D.Lgs. 152/06 (LOQ = 1 ng/kg per I-TEQ PCDD/F), valore previsto dal decreto 46/2019 (LOQ = 0,6 ng/kg per OMS-TEQ PCDD/F + PCBdl)"
 sedimento,"2,3,7,8-TCDD",Precisione,,20,cv,%,"Valore minore tra tabella 6 EPA 1613 e Linea guida SNPA 34/2021 (S_r/u_snpa < 0,66)"
-sedimento,"2,3,7,8-TCDD",Esattezza,83,129,recupero,%,tabella 6 EPA 1613
+sedimento,"2,3,7,8-TCDD",Giustezza,83,129,recupero,%,tabella 6 EPA 1613
 sedimento,"2,3,7,8-TCDF",Precisione,,20,cv,%,"Valore minore tra tabella 6 EPA 1613 e Linea guida SNPA 34/2021 (S_r/u_snpa < 0,66)"
-sedimento,"2,3,7,8-TCDF",Esattezza,87,137,recupero,%,tabella 6 EPA 1613
+sedimento,"2,3,7,8-TCDF",Giustezza,87,137,recupero,%,tabella 6 EPA 1613
 sedimento,"1,2,3,7,8-PeCDD",Precisione,,15,cv,%,"Valore minore tra tabella 6 EPA 1613 e Linea guida SNPA 34/2021 (S_r/u_snpa < 0,66)"
-sedimento,"1,2,3,7,8-PeCDD",Esattezza,76,132,recupero,%,tabella 6 EPA 1613
+sedimento,"1,2,3,7,8-PeCDD",Giustezza,76,132,recupero,%,tabella 6 EPA 1613
 sedimento,"1,2,3,7,8-PeCDF",Precisione,,15,cv,%,"Valore minore tra tabella 6 EPA 1613 e Linea guida SNPA 34/2021 (S_r/u_snpa < 0,66)"
-sedimento,"1,2,3,7,8-PeCDF",Esattezza,86,124,recupero,%,tabella 6 EPA 1613
+sedimento,"1,2,3,7,8-PeCDF",Giustezza,86,124,recupero,%,tabella 6 EPA 1613
 sedimento,"2,3,4,7,8-PeCDF",Precisione,,17,cv,%,"Valore minore tra tabella 6 EPA 1613 e Linea guida SNPA 34/2021 (S_r/u_snpa < 0,66)"
-sedimento,"2,3,4,7,8-PeCDF",Esattezza,72,150,recupero,%,tabella 6 EPA 1613
+sedimento,"2,3,4,7,8-PeCDF",Giustezza,72,150,recupero,%,tabella 6 EPA 1613
 sedimento,"1,2,3,4,7,8-HxCDD",Precisione,,19,cv,%,"Valore minore tra tabella 6 EPA 1613 e Linea guida SNPA 34/2021 (S_r/u_snpa < 0,66)"
-sedimento,"1,2,3,4,7,8-HxCDD",Esattezza,78,152,recupero,%,tabella 6 EPA 1613
+sedimento,"1,2,3,4,7,8-HxCDD",Giustezza,78,152,recupero,%,tabella 6 EPA 1613
 sedimento,"1,2,3,4,7,8-HxCDF",Precisione,,17,cv,%,"Valore minore tra tabella 6 EPA 1613 e Linea guida SNPA 34/2021 (S_r/u_snpa < 0,66)"
-sedimento,"1,2,3,4,7,8-HxCDF",Esattezza,82,118,recupero,%,tabella 6 EPA 1613
+sedimento,"1,2,3,4,7,8-HxCDF",Giustezza,82,118,recupero,%,tabella 6 EPA 1613
 sedimento,"1,2,3,6,7,8-HxCDD",Precisione,,15,cv,%,"Valore minore tra tabella 6 EPA 1613 e Linea guida SNPA 34/2021 (S_r/u_snpa < 0,66)"
-sedimento,"1,2,3,6,7,8-HxCDD",Esattezza,84,124,recupero,%,tabella 6 EPA 1613
+sedimento,"1,2,3,6,7,8-HxCDD",Giustezza,84,124,recupero,%,tabella 6 EPA 1613
 sedimento,"1,2,3,6,7,8-HxCDF",Precisione,,13,cv,%,"Valore minore tra tabella 6 EPA 1613 e Linea guida SNPA 34/2021 (S_r/u_snpa < 0,66)"
-sedimento,"1,2,3,6,7,8-HxCDF",Esattezza,92,120,recupero,%,tabella 6 EPA 1613
+sedimento,"1,2,3,6,7,8-HxCDF",Giustezza,92,120,recupero,%,tabella 6 EPA 1613
 sedimento,"1,2,3,7,8,9-HxCDD",Precisione,,20,cv,%,"Valore minore tra tabella 6 EPA 1613 e Linea guida SNPA 34/2021 (S_r/u_snpa < 0,66)"
-sedimento,"1,2,3,7,8,9-HxCDD",Esattezza,74,142,recupero,%,tabella 6 EPA 1613
+sedimento,"1,2,3,7,8,9-HxCDD",Giustezza,74,142,recupero,%,tabella 6 EPA 1613
 sedimento,"1,2,3,7,8,9-HxCDF",Precisione,,13,cv,%,"Valore minore tra tabella 6 EPA 1613 e Linea guida SNPA 34/2021 (S_r/u_snpa < 0,66)"
-sedimento,"1,2,3,7,8,9-HxCDF",Esattezza,84,122,recupero,%,tabella 6 EPA 1613
+sedimento,"1,2,3,7,8,9-HxCDF",Giustezza,84,122,recupero,%,tabella 6 EPA 1613
 sedimento,"2,3,4,6,7,8-HxCDF",Precisione,,15,cv,%,"Valore minore tra tabella 6 EPA 1613 e Linea guida SNPA 34/2021 (S_r/u_snpa < 0,66)"
-sedimento,"2,3,4,6,7,8-HxCDF",Esattezza,74,148,recupero,%,tabella 6 EPA 1613
+sedimento,"2,3,4,6,7,8-HxCDF",Giustezza,74,148,recupero,%,tabella 6 EPA 1613
 sedimento,"1,2,3,4,6,7,8-HpCDD",Precisione,,15,cv,%,"Valore minore tra tabella 6 EPA 1613 e Linea guida SNPA 34/2021 (S_r/u_snpa < 0,66)"
-sedimento,"1,2,3,4,6,7,8-HpCDD",Esattezza,76,130,recupero,%,tabella 6 EPA 1613
+sedimento,"1,2,3,4,6,7,8-HpCDD",Giustezza,76,130,recupero,%,tabella 6 EPA 1613
 sedimento,"1,2,3,4,6,7,8-HpCDF",Precisione,,13,cv,%,"Valore minore tra tabella 6 EPA 1613 e Linea guida SNPA 34/2021 (S_r/u_snpa < 0,66)"
-sedimento,"1,2,3,4,6,7,8-HpCDF",Esattezza,90,112,recupero,%,tabella 6 EPA 1613
+sedimento,"1,2,3,4,6,7,8-HpCDF",Giustezza,90,112,recupero,%,tabella 6 EPA 1613
 sedimento,"1,2,3,4,7,8,9-HpCDF",Precisione,,16,cv,%,"Valore minore tra tabella 6 EPA 1613 e Linea guida SNPA 34/2021 (S_r/u_snpa < 0,66)"
-sedimento,"1,2,3,4,7,8,9-HpCDF",Esattezza,86,126,recupero,%,tabella 6 EPA 1613
+sedimento,"1,2,3,4,7,8,9-HpCDF",Giustezza,86,126,recupero,%,tabella 6 EPA 1613
 sedimento,OCDD,Precisione,,19,cv,%,"Valore minore tra tabella 6 EPA 1613 e Linea guida SNPA 34/2021 (S_r/u_snpa < 0,66)"
-sedimento,OCDD,Esattezza,89,127,recupero,%,tabella 6 EPA 1613
+sedimento,OCDD,Giustezza,89,127,recupero,%,tabella 6 EPA 1613
 sedimento,OCDF,Precisione,,20,cv,%,"Valore minore tra tabella 6 EPA 1613 e Linea guida SNPA 34/2021 (S_r/u_snpa < 0,66)"
-sedimento,OCDF,Esattezza,74,146,recupero,%,tabella 6 EPA 1613
+sedimento,OCDF,Giustezza,74,146,recupero,%,tabella 6 EPA 1613
 sedimento,OMS-TEQ-PCDD/F,LOQ,,0.7,loq,ng/kg,"Valore minimo tra 1/10 del valore del limite di legge previsto dal D.Lgs. 152/06 (LOQ = 1 ng/kg per I-TEQ PCDD/F), valore previsto dal decreto 46/2019 (LOQ = 0,6 ng/kg per OMS-TEQ PCDD/F + PCBdl) e 1/3 di SQA-MA previsto dal D.Lgs. 152/06 nella matrice sedimenti (LOQ = 0,7 per OMS-TEQ PCDD/F + PCBdl)"
 sedimento,I-TEQ-PCDD/F,LOQ,,0.7,loq,ng/kg,"Valore minimo tra 1/10 del valore del limite di legge previsto dal D.Lgs. 152/06 (LOQ = 1 ng/kg per I-TEQ PCDD/F), valore previsto dal decreto 46/2019 (LOQ = 0,6 ng/kg per OMS-TEQ PCDD/F + PCBdl) e 1/3 di SQA-MA previsto dal D.Lgs. 152/06 nella matrice sedimenti (LOQ = 0,7 per OMS-TEQ PCDD/F + PCBdl)"
