@@ -1,4 +1,6 @@
 library(data.table)
+library(scales)
+library(ggplot2)
 # ---- Funzioni di formattazione e reporting ---- #
 
 #' Formatta un numero con un numero fisso di cifre significative
@@ -276,4 +278,206 @@ format_risultato <- function(req1, req2, value, udm, esito) {
 #' @export
 capitalizza <- function(x) {
   paste0(toupper(substr(x, 1, 1)), substr(x, 2, nchar(x)))
+}
+
+#' Grafico di dispersione con bande robuste e valori di riferimento
+#'
+#' Questa funzione genera un grafico di dispersione dei valori misurati per un dato
+#' livello di concentrazione, evidenziando:
+#' 
+#' - I **punti sperimentali** con jitter per evitare sovrapposizioni;
+#' - Il **valore medio** per ciascun livello (diamante);
+#' - Il **valore atteso o di riferimento** (linea tratteggiata);
+#' - **Intervalli di copertura robusti** calcolati come k·MAD dei valori misurati.
+#' 
+#' La funzione è utile in contesti di **validazione di metodi analitici** (es. report ISO 17025),
+#' poiché mostra sia il confronto tra valori misurati e attesi, sia la dispersione robusta dei dati.
+#'
+#' @param dt `data.table` contenente i dati sperimentali. Deve includere almeno le colonne
+#'   indicate in `livello`, `valore` e `udm`.
+#' @param livello `character` nome della colonna di `dt` che contiene i livelli di concentrazione attesi.
+#' @param valore `character` nome della colonna di `dt` con i valori misurati.
+#' @param udm `character` nome della colonna di `dt` che specifica l'unità di misura.
+#' @param k `numeric` vettore di uno o due valori di moltiplicatore per il MAD (es. c(2,3)).
+#'   Determina la larghezza delle bande robuste. L'ordine dei livelli influisce sullo spessore
+#'   delle linee: livelli maggiori hanno linee più sottili per una migliore visibilità.
+#'
+#' @return Un oggetto `ggplot` contenente:
+#' - Punti sperimentali jitterati;
+#' - Diamante per il valore medio di ciascun livello;
+#' - Linea tratteggiata per il valore atteso;
+#' - Bande robuste colorate secondo i valori di `k`.
+#'
+#' @details
+#' - Le bande robuste sono calcolate come `banda_robusta(valore, k)`, funzione robusta basata su MAD.
+#' - La legenda distingue le bande (k·MAD), la media e il valore di riferimento.
+#' 
+#' @examples
+#' \dontrun{
+#' library(data.table)
+#' dt <- data.table(
+#'   Livello = rep(c(0, 1, 2), each = 5),
+#'   Valore = c(0.1, 0.2, 0.15, 0.18, 0.12, 1.0, 1.1, 0.95, 1.05, 1.02, 2.0, 1.9, 2.1, 2.05, 1.98),
+#'   UDM = rep("mg/L", 15)
+#' )
+#' plot_dispersione(dt, livello = "Livello", valore = "Valore", udm = "UDM")
+#' }
+#' 
+#' @export
+plot_dispersione <- function(
+  dt,
+  livello,
+  valore,
+  udm,
+  k = c(2, 3)
+) {
+  ...
+}
+
+plot_dispersione <- function(
+  dt,
+  livello,
+  valore,
+  udm,
+  k = c(2, 3)
+) {
+
+  if (!data.table::is.data.table(dt)) {
+    stop("`dt` deve essere un `data.table`")
+  }
+
+  if (!all(c(livello, valore, udm) %in% names(dt))) {
+    stop("`livello`, `valore` e `udm` devono essere colonne presenti in `dt`")
+  }
+
+  if (length(k) > 2) {
+    stop("possono essere gestiti solo due livelli di `k · MAD`")
+  }
+
+  # riassunti per livello
+  riass <- dt[, .(
+    media = mean(valore_col, na.rm = TRUE),
+    udm = unique(udm_col, na.rm = TRUE)
+  ),
+  by = .(atteso = livello_col,
+         livello = factor(livello_col)),
+  env = list(
+    valore_col = valore,
+    livello_col = livello,
+    udm_col = udm
+  )
+  ]
+
+  udm <- unique(riass$udm) # unità di misura per il grafico
+  if (length(udm) != 1) {
+    stop("i livelli devono condividere la stessa unità di misura")
+  }
+
+  # bande robuste
+  k_order <- k[order(k)]
+  bande <- lapply(k_order, function(x) {
+    dt[, as.data.frame(banda_robusta(valore_col, k = x, na.rm = TRUE)),
+      by = .(livello_col),
+    env = list(
+      valore_col = valore,
+      livello_col = livello
+    )]
+  }) |> rbindlist()
+
+ bande[, livello_col := factor(livello_col), 
+  env = list(livello_col = livello)]
+ bande[, k := factor(k, levels = sort(unique(k)))]
+ # spessore delle linee inversamente proporzionale a k
+ bande[, linewidth := (nlevels(k) - as.integer(k) + 1) * 3]
+ bande <- bande[order(-k)]
+
+ # colori 
+ accent <- "#0f4c81"
+ accent_2 <- scales::col_lighter(accent, 50)
+ accent_1 <- scales::col_lighter(accent, 20)
+  
+ k_levels <- levels(bande$k)
+
+ col_map <- setNames(
+  c(accent_1, accent_2)[seq_along(k_levels)],
+  k_levels
+ ) 
+
+  # costruzione grafico
+  ggplot2::ggplot(dt, 
+    ggplot2::aes(
+      x = factor(.data[[livello]]), 
+      y = .data[[valore]]
+    )
+  ) +
+
+    # bande robuste
+    ggplot2::geom_linerange(
+      data = bande, # riordino per overlay
+      ggplot2::aes(
+        x = .data[[livello]],
+        ymin = lower,
+        ymax = upper,
+        col = k
+      ),
+      linewidth = bande$linewidth,
+      inherit.aes = FALSE
+    ) +
+
+    # punti sperimentali
+    ggplot2::geom_jitter(
+      width = 0.05,
+      height = 0,
+      shape = 16,
+      size = 3
+    ) +
+
+    # media per livello
+    ggplot2::geom_point(
+      data = riass,
+      ggplot2::aes(
+        x = .data[[livello]],
+        y = media,
+        shape = "Media",
+      ),
+      fill = "#f4f4f4",
+      col = accent,
+      stroke = 0.6,
+      size = 5
+    ) +
+
+    # valore atteso
+    ggplot2::geom_segment(
+      data = riass,
+      ggplot2::aes(
+        x = as.numeric(.data[[livello]]) - 0.2,
+        xend = as.numeric(.data[[livello]]) + 0.2,
+        y = atteso,
+        yend = atteso,
+        linetype = "Valore di riferimento"
+      ),
+      colour = "#222222",
+      linewidth = 0.8
+    ) +
+
+    ggplot2::labs(
+      x = paste0("Livello di concentrazione atteso (", udm, ")"),
+      y = paste0("Concentrazione misurata (", udm, ")"),
+      col = "k · MAD"
+    ) +
+    
+    ggplot2::scale_colour_manual(values = col_map) +
+    ggplot2::scale_shape_manual(
+      name = "",
+      values = c("Media" = 23)
+    ) +
+    ggplot2::scale_linetype_manual(
+      name = "",
+      values = c("Valore di riferimento" = "dashed"),
+      labels = "Valore di\nriferimento"
+    ) +
+
+    ggplot2::theme_minimal(base_size = 14) +
+
+    ggplot2::guides(linewidth = "none")
 }

@@ -226,3 +226,72 @@ normalita_shapiro <- function(values, significance = 0.95) {
     result = result
   )
 }
+
+#' Banda di dispersione robusta basata su mediana e MAD
+#'
+#' Calcola una banda di dispersione robusta a partire da un insieme di valori
+#' numerici, utilizzando la mediana come indicatore di posizione centrale e
+#' la deviazione assoluta mediana (MAD) come indicatore di dispersione.
+#'
+#' La MAD è calcolata con costante di normalizzazione pari a 1.4826, in modo da
+#' renderla confrontabile con la deviazione standard nel caso di distribuzione
+#' normale. La banda è definita come:
+#'
+#' \deqn{
+#' \text{mediana} \pm k \cdot \text{MAD}
+#' }
+#'
+#' Il parametro \code{k} è un moltiplicatore convenzionale utilizzato per
+#' rappresentare livelli crescenti di dispersione (ad esempio \code{k = 2} o
+#' \code{k = 3}); non rappresenta un intervallo di confidenza formale.
+#'
+#' @param x Vettore numerico contenente i valori sperimentali.
+#' @param k Moltiplicatore positivo applicato alla MAD.
+#' @param na.rm Valore logico; se \code{TRUE} i valori \code{NA} vengono rimossi
+#'   prima del calcolo.
+#'
+#' @return Un \code{data.frame} a una riga con le seguenti colonne:
+#'   \describe{
+#'     \item{mediana}{mediana dei valori}
+#'     \item{mad}{deviazione assoluta mediana normalizzata}
+#'     \item{k}{moltiplicatore utilizzato}
+#'     \item{lower}{limite inferiore della banda}
+#'     \item{upper}{limite superiore della banda}
+#'   }
+#'
+#' @details
+#' La funzione richiede almeno cinque valori numerici e restituisce un errore
+#' nel caso di dispersione nulla (MAD uguale a zero), poiché la variabilità non
+#' risulta valutabile.
+#'
+#' @examples
+#' x <- c(10.1, 9.9, 10.0, 10.2, 9.8, 10.1)
+#' banda_robusta(x, k = 2)
+#'
+#' @seealso \code{\link[stats]{median}}, \code{\link[stats]{mad}}
+#'
+#' @export
+banda_robusta <- function(x, k = 2, na.rm = TRUE) {
+  if (!is.numeric(x))
+    stop("x deve essere numerico")
+
+  if (length(x) < 5)
+    stop("Sono richiesti almeno 5 valori")
+
+  if (!is.numeric(k) || k <= 0)
+    stop("k deve essere un numero positivo")
+
+  med <- stats::median(x, na.rm = na.rm)
+  mad_val <- stats::mad(x, constant = 1.4826, na.rm = na.rm)
+
+  if (mad_val == 0)
+    stop("MAD nulla: dispersione non valutabile")
+
+  data.frame(
+    mediana = med,
+    mad = mad_val,
+    k = k,
+    lower = med - k * mad_val,
+    upper = med + k * mad_val
+  )
+}

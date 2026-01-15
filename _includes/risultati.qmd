@@ -16,6 +16,14 @@ linearita_txt <- risultati[variable == "intervallo_linearita",
 **Intervallo di linearità**: `r linearita_txt`<br>
 
 ```{r}
+#| fig-cap: !expr paste0("Valori misurati per l'analita ", analita, 
+#|   ". Sono mostrati anche il valore di riferimento, il valore medio delle misure e
+#|   gli intervalli di copertura robusti calcolati mediante $k\\cdot\\text{MAD}$.")
+
+grafici[, grafico_obj[[1]]]
+```
+
+```{r}
 #| output: asis
 livelli <- risultati[!is.na(livello), unique(livello)]
 
@@ -23,7 +31,7 @@ for (lvl in livelli) {
   env_child <- new.env()
   env_child$risultati <- risultati[livello == lvl]
   env_child$livello <- lvl
-  knitr::knit_child("_includes/precisione_esattezza.qmd",
+  knitr::knit_child("_includes/precisione_giustezza.qmd",
         envir = env_child,
         quiet = TRUE) |>
     cat()
