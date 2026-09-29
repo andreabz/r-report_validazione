@@ -1,188 +1,151 @@
 # Report di validazione ISO/IEC 17025 – esempio strutturato
 
-[![Test and Publish](https://github.com/andreabz/r-report_validazione/actions/workflows/deploy.yml/badge.svg)](
-https://github.com/andreabz/r-report_validazione/actions/workflows/deploy.yml
-)
+[![Test and Publish](https://github.com/andreabz/r-report_validazione/actions/workflows/deploy.yml/badge.svg)](https://github.com/andreabz/r-report_validazione/actions/workflows/deploy.yml)
 ![renv](https://img.shields.io/badge/R%20deps-renv-blue)
 
-Questo repository mostra un possibile approccio alla **strutturazione del materiale di lavoro**
-che porta alla redazione di un rapporto di validazione di un metodo analitico in ambito ISO/IEC 17025.
+Questo repository esplora un possibile modo di **organizzare e rendere riproducibile il materiale di lavoro** che porta alla redazione di un rapporto di validazione di un metodo analitico, in un contesto orientato ai principi della **ISO/IEC 17025**.
 
-L'obiettivo non è fornire un metodo operativo, ma **mostrare come organizzare requisiti,
-pianificazione, dati e calcoli in modo coerente con il processo reale di validazione**.
+L'obiettivo non è proporre un metodo ufficiale o una procedura di accreditamento, ma mostrare come collegare in modo esplicito **requisiti, pianificazione sperimentale, dati, calcoli e reporting**.
 
-👉 **Report pubblicato:**  
-https://andreabz.github.io/r-report_validazione/
+**[Report pubblicato](https://andreabz.github.io/r-report_validazione/)**
 
 ---
 
-## Obiettivo del repository
+## Il problema
 
-- separare concettualmente **requisiti**, **piano prove** e **dati sperimentali**
-- rendere i calcoli **riproducibili e rieseguibili**
-- facilitare l'aggiornamento del report al variare di:
-  - requisiti normativi
-  - matrici analizzate
-  - dati sperimentali
-- fornire un esempio didattico di report generato in modo dinamico
+Un rapporto di validazione non è soltanto un documento finale. È il risultato di una sequenza di decisioni:
 
-Il report finale non è una fotografia statica, ma il **risultato riproducibile di un processo**.
+1. quali prestazioni del metodo devono essere verificate;
+2. quali requisiti di accettabilità vengono adottati;
+3. come vengono pianificate le prove;
+4. quali dati vengono raccolti;
+5. quali calcoli e regole decisionali vengono applicati;
+6. come i risultati vengono documentati.
 
----
+In questo progetto queste componenti sono mantenute distinte, ma collegate attraverso codice e dati strutturati.
 
-## Cosa questo repository NON è
-
-- ❌ non è un metodo ufficiale
-- ❌ non è utilizzabile a fini operativi o di accreditamento
-- ❌ non contiene dati reali di laboratorio
-- ❌ non sostituisce procedure, istruzioni operative o metodi normati
-
-I dati presenti sono **verosimili ma non reali** e hanno esclusivamente finalità dimostrative.
+L'idea centrale è semplice: **il report dovrebbe essere una conseguenza riproducibile del processo di validazione, non una trascrizione manuale dei suoi risultati**.
 
 ---
 
-## Struttura del repository
+## Cosa contiene
 
-La struttura del repository è pensata per separare chiaramente
-codice, dati, contenuti testuali e configurazione del report.
+Il repository separa principalmente:
+
+- **requisiti** e criteri di accettabilità;
+- **piano delle prove** e condizioni sperimentali;
+- **dati sperimentali**;
+- funzioni R per **calcoli, decisioni e formattazione**;
+- contenuti testuali e riferimenti;
+- test automatici delle funzioni;
+- documento Quarto che assembla il report finale.
+
+Una struttura semplificata è:
 
 ```text
 R/
-├─ utils.R                 # Funzioni R per calcoli, decisioni e formattazione
+├─ utils.R
 
 data/
-├─ condizioni.csv          # Condizioni sperimentali e livelli di prova
-├─ requisiti.csv           # Requisiti di accettabilità
-├─ risultati.csv           # Dati sperimentali (verosimili, meglio se presi da LIMS)
+├─ condizioni.csv
+├─ requisiti.csv
+├─ risultati.csv
 
 _includes/
 ├─ terreno/
-│  ├─ parametri_prestazionali.qmd  # Descrizione parametri e requisiti (terreni)
-│  └─ piano_prove.qmd              # Piano sperimentale per i terreni
 ├─ sedimento/
-│  ├─ parametri_prestazionali.qmd  # Descrizione parametri e requisiti (sedimenti)
-│  └─ piano_prove.qmd              # Piano sperimentale per i sedimenti
-├─ news.qmd                # Storico delle modifiche al metodo
-├─ riferimenti.qmd         # Riferimenti normativi e bibliografici
-├─ sommario.qmd            # Sommario del report
+├─ news.qmd
+├─ riferimenti.qmd
+└─ sommario.qmd
 
 tests/
-├─ testthat/               # Test unitari delle funzioni R
+└─ testthat/
 
 www/
-├─ report_validazione.css  # Stili grafici del report
+└─ report_validazione.css
 
-report_validazione.qmd     # Documento principale
+report_validazione.qmd
 ```
 
----
-
-## Principi di organizzazione
-
-Il repository è strutturato per riflettere il **processo reale di validazione**:
-
-1. **Requisiti**
-   - definiti prima delle prove
-   - stabili nel tempo
-   - indipendenti dai dati sperimentali
-
-2. **Pianificazione**
-   - definizione di matrici, livelli, repliche
-   - scelta delle prove necessarie a verificare i requisiti
-
-3. **Dati sperimentali**
-   - risultati delle misure
-   - unici elementi che cambiano a ogni iterazione
-
-Queste informazioni nascono in momenti diversi e vengono quindi mantenute in **file distinti**.
+La separazione dei contenuti permette, per esempio, di modificare requisiti o dati sperimentali senza dover riscrivere manualmente il report.
 
 ---
 
-## Riproducibilità
+## Riproducibilità e controllo dei calcoli
 
-- L'ambiente R è gestito tramite `renv`
-- Tutte le elaborazioni sono rieseguite automaticamente a ogni render del report
-- Le funzioni di calcolo sono testate formalmente tramite `testthat`
+L'ambiente R è gestito con `renv`, mentre i calcoli sono implementati in funzioni riutilizzabili e verificati con `testthat`.
 
-Modificando:
-- un file di requisiti,
-- un piano di prova,
-- o aggiungendo una nuova matrice,
+I test coprono tre aspetti principali:
 
-il report si aggiorna in modo coerente senza riscrivere manualmente il documento.
+### Correttezza matematica
 
-Questo approccio rende esplicito il legame tra decisioni prese a monte, 
-dati sperimentali e risultati riportati.
+I risultati vengono confrontati con formule statistiche esplicite, valori di riferimento e casi limite.
+
+### Validità degli input
+
+Vengono controllate condizioni come numero di repliche, tipologia e intervallo dei dati e parametri non ammissibili. Le condizioni che rendono un calcolo non applicabile vengono quindi esplicitate nel codice.
+
+### Coerenza del reporting
+
+Vengono verificati anche struttura degli output, messaggi interpretativi e informazioni utilizzate per costruire il report.
+
+Questo rende verificabile non solo il calcolo, ma anche il passaggio:
+
+**dati → calcolo → interpretazione → documento**
 
 ---
 
-## Funzioni di calcolo e test
+## Continuous integration
 
-Le funzioni di calcolo utilizzate nel report sono verificate tramite test unitari formali (`testthat`).
+I test vengono eseguiti automaticamente tramite **GitHub Actions**.
 
-L'obiettivo dei test non è solo individuare errori di codice, ma rendere esplicite le regole statistiche e 
-operative che stanno alla base del report di validazione.
+Il workflow:
 
-I test sono strutturati secondo tre livelli principali.
+1. ripristina l'ambiente R tramite `renv`;
+2. esegue i test;
+3. genera il report;
+4. pubblica il risultato solo quando il processo di verifica è completato con successo.
 
-### 1. Correttezza matematica
+La continuous integration viene quindi utilizzata come controllo del processo di generazione del documento, non soltanto come controllo del codice.
 
-Ogni funzione viene verificata confrontando i risultati con:
-
-- formule statistiche esplicite (es. ripetibilità, intervalli di confidenza),
-- valori di riferimento tratti dalla letteratura o da norme tecniche,
-- casi limite noti.
-
-Questo garantisce che i calcoli implementati corrispondano ai metodi teorici dichiarati.
-
-### 2. Controllo degli input
-
-I test verificano che le funzioni:
-
-- accettino solo dati coerenti con i requisiti del metodo (numero minimo di repliche, 
-tipo di dato, range dei parametri),
-- intercettino condizioni non valide (deviazione standard nulla, concentrazioni non fisicamente ammissibili,
-parametri fuori range),
-- restituiscano errori espliciti e informativi.
-
-In questo modo, le regole di applicabilità dei parametri prestazionali non restano implicite, 
-ma diventano parte del codice verificato.
-
-### 3. Coerenza dell'output per il reporting
-
-Poiché il report finale simula un documento formale, vengono testati anche:
-
-- la struttura degli output (liste, data.frame, campi attesi),
-- i messaggi testuali di interpretazione,
-- la formattazione dei risultati e degli esiti di conformità.
-
-Questo assicura che il passaggio da calcolo → interpretazione → report sia stabile e riproducibile.
-
-### Integrazione con la CI
-
-I test vengono eseguiti automaticamente tramite GitHub Actions a ogni `push` sul branch principale.
-
-Il report viene pubblicato solo se:
-
-- l'ambiente R è correttamente ripristinato tramite `renv`,
-- tutti i test risultano superati.
-
-In questo modo, il documento pubblicato rappresenta sempre il risultato coerente
-di un processo verificato.
+---
 
 ## Generazione del report
 
-Il [report finale](https://andreabz.github.io/r-report_validazione/) viene generato con **Quarto** a partire da:
+Il report viene generato con **Quarto** a partire da:
 
-- file di testo descrittivi (`.qmd`)
-- dati strutturati (`.csv`)
-- funzioni R riutilizzabili
+- file `.qmd` per i contenuti descrittivi;
+- file `.csv` per dati e requisiti;
+- funzioni R per i calcoli;
+- componenti riutilizzabili per le diverse matrici e sezioni.
 
-Le sezioni di risultato sono create dinamicamente tramite cicli e `knit_child()`.
+Le sezioni di risultato vengono costruite dinamicamente, mantenendo separati contenuto, dati e logica di elaborazione.
+
+**[Apri il report](https://andreabz.github.io/r-report_validazione/)**
+
+---
+
+## Cosa questo progetto non è
+
+Questo repository è un **esempio dimostrativo**.
+
+- Non è un metodo analitico ufficiale.
+- Non è destinato all'uso operativo o all'accreditamento.
+- Non contiene dati reali di laboratorio.
+- Non sostituisce metodi normati, procedure o istruzioni operative.
+
+I dati utilizzati sono verosimili ma non reali e hanno esclusivamente finalità dimostrative.
+
+---
+
+## Perché questo progetto
+
+Il punto di interesse non è soltanto automatizzare la produzione di un documento.
+
+È esplorare come **qualità, statistica e riproducibilità** possano essere incorporate nella struttura stessa del lavoro di validazione: requisiti espliciti, dati separati dalla logica, calcoli verificabili e un report che possa essere rigenerato a partire dalle sue fonti.
 
 ---
 
 ## Licenza
 
-Questo repository è rilasciato con licenza GPL-3 ed è utilizzabile liberamente
-a fini didattici e formativi.
+Questo repository è rilasciato con licenza GPL-3 ed è utilizzabile liberamente a fini didattici e formativi.
